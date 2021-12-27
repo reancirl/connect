@@ -19,10 +19,10 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
-        .nav-link {
-            margin-left:1.5rem;
+        .nav_custom_link {
+            margin-left:1.5rem !important;
             font-weight:500;
-            color:#000;
+            color:#000 !important;
         }
     </style>
 </head>
@@ -43,28 +43,28 @@
                         <ul class="navbar-nav mx-auto">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">{{ __('Dashboard') }}</a>
+                                    <a class="nav-link nav_custom_link" href="">{{ __('Dashboard') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">{{ __('Post') }}</a>
+                                    <a class="nav-link nav_custom_link" href="">{{ __('Post') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">{{ __('Pages') }}</a>
+                                    <a class="nav-link nav_custom_link" href="">{{ __('Pages') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">{{ __('Media') }}</a>
+                                    <a class="nav-link nav_custom_link" href="">{{ __('Media') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">{{ __('Menu') }}</a>
+                                    <a class="nav-link nav_custom_link" href="">{{ __('Menu') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">{{ __('Neighborhood') }}</a>
+                                    <a class="nav-link nav_custom_link" href="">{{ __('Neighborhood') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">{{ __('Developer') }}</a>
+                                    <a class="nav-link nav_custom_link" href="">{{ __('Developer') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">{{ __('Projects') }}</a>
+                                    <a class="nav-link nav_custom_link" href="">{{ __('Projects') }}</a>
                                 </li>
                             </ul>
                         </ul>
@@ -86,7 +86,7 @@
                                 @endif
                             @else
                                 <li class="nav-item dropdown">
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle nav_custom_link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                         {{ ucwords(Auth::user()->name) }}
                                     </a>
 
