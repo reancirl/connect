@@ -24,6 +24,9 @@
             font-weight:500;
             color:#000 !important;
         }
+        .active_link {
+            border-bottom:2px solid #000;
+        }
     </style>
 </head>
 <body>
@@ -43,28 +46,40 @@
                         <ul class="navbar-nav mx-auto">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link nav_custom_link" href="">{{ __('Dashboard') }}</a>
+                                    <a class="nav-link nav_custom_link {{ (request()->is('home')) ? 'active_link' : '' }}" href="{{ route('home') }}">{{ __('Dashboard') }}</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle nav_custom_link {{ (request()->is('post*')) ? 'active_link' : '' }} {{ (request()->is('category*')) ? 'active_link' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        {{ __('Post') }}
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('post.index') }}">
+                                            {{ __('All Posts') }}
+                                        </a>
+
+                                        <a class="dropdown-item" href="{{ route('category.index') }}">
+                                            {{ __('Categories') }}
+                                        </a>
+                                    </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav_custom_link" href="">{{ __('Post') }}</a>
+                                    <a class="nav-link nav_custom_link {{ (request()->is('page*')) ? 'active_link' : '' }}" href="{{ route('page.index') }}">{{ __('Pages') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav_custom_link" href="">{{ __('Pages') }}</a>
+                                    <a class="nav-link nav_custom_link {{ (request()->is('media*')) ? 'active_link' : '' }}" href="{{ route('media.index') }}">{{ __('Media') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav_custom_link" href="">{{ __('Media') }}</a>
+                                    <a class="nav-link nav_custom_link {{ (request()->is('menu*')) ? 'active_link' : '' }}" href="{{ route('menu.index') }}">{{ __('Menu') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav_custom_link" href="">{{ __('Menu') }}</a>
+                                    <a class="nav-link nav_custom_link {{ (request()->is('neighborhood*')) ? 'active_link' : '' }}" href="{{ route('neighborhood.index') }}">{{ __('Neighborhood') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav_custom_link" href="">{{ __('Neighborhood') }}</a>
+                                    <a class="nav-link nav_custom_link {{ (request()->is('developer*')) ? 'active_link' : '' }}" href="{{ route('developer.index') }}">{{ __('Developer') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav_custom_link" href="">{{ __('Developer') }}</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav_custom_link" href="">{{ __('Projects') }}</a>
+                                    <a class="nav-link nav_custom_link {{ (request()->is('project*')) ? 'active_link' : '' }}" href="{{ route('project.index') }}">{{ __('Projects') }}</a>
                                 </li>
                             </ul>
                         </ul>
