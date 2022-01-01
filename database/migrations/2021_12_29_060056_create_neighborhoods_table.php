@@ -11,21 +11,21 @@ class CreateNeighborhoodsTable extends Migration
      *
      * @return void
      */
-    public function up()
-    {
-        Schema::create('neighborhoods', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
-    }
+    // public function up()
+    // {
+    //     Schema::create('neighborhoods', function (Blueprint $table) {
+    //         $table->id();
+    //         $table->timestamps();
+    //     });
+    // }
 
     /**
      * Reverse the migrations.
      *
      * @return void
      */
-    public function down()
-    {
-        Schema::dropIfExists('neighborhoods');
-    }
+    // public function down()
+    // {
+    //     Schema::dropIfExists('neighborhoods');
+    // }
 }

@@ -11,21 +11,21 @@ class CreateProjectsTable extends Migration
      *
      * @return void
      */
-    public function up()
-    {
-        Schema::create('projects', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
-    }
+    // public function up()
+    // {
+    //     Schema::create('projects', function (Blueprint $table) {
+    //         $table->id();
+    //         $table->timestamps();
+    //     });
+    // }
 
     /**
      * Reverse the migrations.
      *
      * @return void
      */
-    public function down()
-    {
-        Schema::dropIfExists('projects');
-    }
+    // public function down()
+    // {
+    //     Schema::dropIfExists('projects');
+    // }
 }

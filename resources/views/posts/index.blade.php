@@ -9,18 +9,38 @@
         </h3>
         <hr>
 
-        <table class="table table-bordered">
+        <table class="table table-bordered" id="data_table">
             <thead>
                 <tr>
                     <th width="30%">Title</th>
                     <th>Author</th>
-                    <th>Categories</th>
+                    <th>Category</th>
                     <th>Date</th>
-                    <th width="10%">Action</th>
+                    <th width="15%">Action</th>
                 </tr>
             </thead>
             <tbody>
-                
+                @foreach ($data as $d)
+                    <tr>
+                        <td>
+                            {{ $d->title }}
+                        </td>
+                        <td>
+                            {{ $d->created_by }}
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <button class="btn btn-success btn-sm">View</button>
+                            <button class="btn btn-primary btn-sm">Edit</button>
+                            <button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                @endforeach
             </tbody>
           </table>
     </div>

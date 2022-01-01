@@ -14,7 +14,8 @@ class PostCategoryController extends Controller
      */
     public function index()
     {
-        return view('categories.index');
+        $data = PostCategory::get();
+        return view('categories.index',compact('data'));
     }
 
     /**

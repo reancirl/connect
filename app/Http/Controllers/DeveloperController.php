@@ -14,7 +14,8 @@ class DeveloperController extends Controller
      */
     public function index()
     {
-        return view('developers.index');
+        $data = Developer::get();
+        return view('developers.index',compact('data'));
     }
 
     /**

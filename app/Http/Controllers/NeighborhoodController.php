@@ -14,7 +14,8 @@ class NeighborhoodController extends Controller
      */
     public function index()
     {
-        return view('neighborhoods.index');
+        $data = Neighborhood::get();
+        return view('neighborhoods.index',compact('data'));
     }
 
     /**
