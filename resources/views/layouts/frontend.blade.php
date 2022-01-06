@@ -120,93 +120,176 @@
                         </div>
                     </div>
                     <div class="d-flex">
-                        <input type="text" placeholder="Enter a city, town neighbourhood or address" class="rounded-0">
-                        <select name="" id="" style="border-radius:0px !important;text-align:center;">
+                        <input type="text" class="rounded-0 search_input search_fields thin_border_right flex-grow-1" placeholder="Enter a city, town neighbourhood or address">
+
+                        <select name="" id="" style="border-radius:0px !important;text-align:center;" class="search_fields thin_border_right">
                             <option disabled selected>Property Type</option>
                         </select>
-                        <select name="" id="" style="border-radius:0px !important;text-align:center;">
+                        <select name="" id="" style="border-radius:0px !important;text-align:center;" class="search_fields thin_border_right">
                             <option disabled selected>Min Price</option>
                         </select>
-                        <select name="" id="" style="border-radius:0px !important;text-align:center;">
+                        <select name="" id="" style="border-radius:0px !important;text-align:center;" class="search_fields thin_border_right">
                             <option disabled selected>Max Price</option>
                         </select>
-                        <select name="" id="" style="border-radius:0px !important;text-align:center;">
+                        <select name="" id="" style="border-radius:0px !important;text-align:center;" class="search_fields thin_border_right">
                             <option disabled selected>Beds</option>
                         </select>
-                        <select name="" id="" style="border-radius:0px !important;text-align:center;">
+                        <select name="" id="" style="border-radius:0px !important;text-align:center;" class="search_fields">
                             <option disabled selected>Baths</option>
                         </select>
                     </div>
+                    <button class="btn_connect_button mt-4" style="font-weight:500;">Find Listings</button>
+                    <p style="color:#000; font-weight:300; font-size:16px;margin-top:2rem;margin-bottom:0px;padding-bottom:0px;">
+                        Or search active listings for sale by:
+                    </p> 
+                    <p style="color:#000; font-weight:300; font-size:14px;margin-top:0px;padding-top:0px;">
+                        <a href="">Search by Price</a>
+                        | <a href="">Search by Neighbourhood</a>
+                        | <a href="">Search All Listings</a>
+                        | <a href="">Search All Homes</a>
+                        | <a href="">Search All Condos</a>
+                        | <a href="">Search All Lofts</a>
+                    </p>  
                 </div>
             </section>
-            <section class="text-center">
+            <section class="text-center pt-5 mb-0 pb-0" style="background-color:#F1F2F9;">
                 <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="slider" data-paging="true" data-arrows="true">
-                                <ul class="slides">
-                                    <li class="col-md-6 col-12">
-                                        <div class="project-thumb">
-                                            <a href="#"> <img alt="Image" class="border--round" src="{{ asset('stack/img/work-6.jpg') }}"> </a>
-                                            <h4>Nike Active</h4> <span>Print Marketing</span> </div>
-                                    </li>
-                                    <li class="col-md-6 col-12">
-                                        <div class="project-thumb">
-                                            <a href="#"> <img alt="Image" class="border--round" src="{{ asset('stack/img/work-2.jpg') }}"> </a>
-                                            <h4>Get Lost in Thailand</h4> <span>Print Marketing</span> </div>
-                                    </li>
-                                    <li class="col-md-6 col-12">
-                                        <div class="project-thumb">
-                                            <a href="#"> <img alt="Image" class="border--round" src="{{ asset('stack/img/work-3.jpg') }}"> </a>
-                                            <h4>M&amp;D Stairs Company</h4> <span>Branding &amp; Identity</span> </div>
-                                    </li>
-                                    <li class="col-md-6 col-12">
-                                        <div class="project-thumb">
-                                            <a href="#"> <img alt="Image" class="border--round" src="{{ asset('stack/img/work-4.jpg') }}"> </a>
-                                            <h4>Blossom Naturals</h4> <span>Branding &amp; Identity</span> </div>
-                                    </li>
-                                </ul>
+                    <div class="row mb-5">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="cta">
+                                <h2 style="color:#403254;font-family:Roboto;font-weight:900;font-size:3rem;" class="mb-0 pb-0">Pre-Construction Developments</h2>
+                                <p style="color:#000; font-weight:400; font-size:16px;" class="mt-0 pt-0">
+                                    Ready to enjoy the unique advantages of pre-construction investing? View some
+                                    <br>
+                                    of the most exciting developments coming to the market.
+                                </p>                                
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section>
-                <div class="container">
-                    <div class="masonry">
-                        <div class="masonry-filter-container text-center d-flex flex-wrap justify-content-center align-items-center"> <span>Category:</span>
-                            <div class="masonry-filter-holder">
-                                <div class="masonry__filters" data-filter-all-text="All Categories">
-                                    <ul>
-                                        <li class="active" data-masonry-filter="*">All Categories</li>
-                                        <li data-masonry-filter="print">Print</li>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="slider" data-arrows="true" data-paging="true" data-timing="30000">
+                                    <ul class="slides">
+                                        <li> 
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h2 class="development_slider_number text-left pb-0 mb-0">01</h2>
+                                                    <h2 class="development_slider_title text-left pb-0 mb-2">Featured Development</h2>
+                                                    <p style="color:#3A3594; font-weight:400; font-size:16px;" class="mt-0 pt-0 pb-0 mb-3">
+                                                        55 Charles Street East, Toronto By Mod Developments
+                                                    </p> 
+                                                    <p style="color:#000; font-weight:400; font-size:14px;padding-left:5rem;" class="mt-0 pt-0 text-left">
+                                                        Etiam eu venenatis magna, ac fermentum est. Vestibulum sit amet posuere ipsum. Nullam neque risus, dapibus sit amet 
+                                                        ullamcorper ut, pellentesque eu massa. Cras maximus mauris eget justo convallis…					
+                                                    </p>  
+                                                    <button class="btn_connect_button mr-4 float-right">Read more</button>
+                                                </div>
+                                                <div class="col">
+                                                    <img alt="Image" src="{{ asset('stack/img/work-1.jpg') }}"> 
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li> 
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h2 class="development_slider_number text-left pb-0 mb-0">02</h2>
+                                                    <h2 class="development_slider_title text-left pb-0 mb-2">Featured Development</h2>
+                                                    <p style="color:#3A3594; font-weight:400; font-size:16px;" class="mt-0 pt-0 pb-0 mb-3">
+                                                        55 Charles Street East, Toronto By Mod Developments
+                                                    </p> 
+                                                    <p style="color:#000; font-weight:400; font-size:14px;padding-left:5rem;" class="mt-0 pt-0 text-left">
+                                                        Etiam eu venenatis magna, ac fermentum est. Vestibulum sit amet posuere ipsum. Nullam neque risus, dapibus sit amet 
+                                                        ullamcorper ut, pellentesque eu massa. Cras maximus mauris eget justo convallis…					
+                                                    </p>  
+                                                    <button class="btn_connect_button mr-4 float-right">Read more</button>
+                                                </div>
+                                                <div class="col">
+                                                    <img alt="Image" src="{{ asset('stack/img/work-2.jpg') }}">
+                                                </div>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="masonry__container row masonry--active">
-                            <div class="masonry__item col-md-6 text-center filter-print" data-masonry-filter="Print">
-                                <div class="project-thumb">
-                                    <a href="#"> <img alt="Image" class="border--round" src="{{ asset('stack/img/work-6.jpg') }}"> </a>
-                                    <h4>Nike Active</h4> <span>Print Marketing</span> </div>
-                            </div>
-                            <div class="masonry__item col-md-6 text-center filter-print" data-masonry-filter="Print">
-                                <div class="project-thumb">
-                                    <a href="#"> <img alt="Image" class="border--round" src="{{ asset('stack/img/work-2.jpg') }}"> </a>
-                                    <h4>Get Lost in Thailand</h4> <span>Print Marketing</span> </div>
-                            </div>
-                        </div>
+                    </div>
                     </div>
                 </div>
             </section>
-            <section class="switchable feature-large">
+            <section style="background-color:#F1F2F9;padding-bottom:4rem;">
                 <div class="container">
+                    <div class="masonry">
+                        <div class="masonry__container row masonry--active">
+                            <div class="masonry__item col-md-4 text-center filter-print" data-masonry-filter="Print">
+                                <div class="project-thumb">
+                                    <a href="#"> <img alt="Image" class="border--round" src="{{ asset('stack/img/work-6.jpg') }}"> </a>
+                                    <h4 class="featured_developments_title">Deveplopment Name</h4> 
+                                    <h4 class="featured_developments_subtitle">Toronto | 1234 Long Street Address</h4> 
+                                </div>
+                            </div>
+                            <div class="masonry__item col-md-4 text-center filter-print" data-masonry-filter="Print">
+                                <div class="project-thumb">
+                                    <a href="#"> <img alt="Image" class="border--round" src="{{ asset('stack/img/work-2.jpg') }}"> </a>
+                                    <h4 class="featured_developments_title">Deveplopment Name</h4> 
+                                    <h4 class="featured_developments_subtitle">Toronto | 1234 Long Street Address</h4>
+                                </div>
+                            </div>
+                            <div class="masonry__item col-md-4 text-center filter-print" data-masonry-filter="Print">
+                                <div class="project-thumb">
+                                    <a href="#"> <img alt="Image" class="border--round" src="{{ asset('stack/img/work-3.jpg') }}"> </a>
+                                    <h4 class="featured_developments_title">Deveplopment Name</h4> 
+                                    <h4 class="featured_developments_subtitle">Toronto | 1234 Long Street Address</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="masonry__container row masonry--active">
+                            <div class="masonry__item col-md-4 text-center filter-print" data-masonry-filter="Print">
+                                <div class="project-thumb">
+                                    <a href="#"> <img alt="Image" class="border--round" src="{{ asset('stack/img/work-1.jpg') }}"> </a>
+                                    <h4 class="featured_developments_title">Deveplopment Name</h4> 
+                                    <h4 class="featured_developments_subtitle">Toronto | 1234 Long Street Address</h4>
+                                </div>
+                            </div>
+                            <div class="masonry__item col-md-4 text-center filter-print" data-masonry-filter="Print">
+                                <div class="project-thumb">
+                                    <a href="#"> <img alt="Image" class="border--round" src="{{ asset('stack/img/work-5.jpg') }}"> </a>
+                                    <h4 class="featured_developments_title">Deveplopment Name</h4> 
+                                    <h4 class="featured_developments_subtitle">Toronto | 1234 Long Street Address</h4>
+                                </div>
+                            </div>
+                            <div class="masonry__item col-md-4 text-center filter-print" data-masonry-filter="Print">
+                                <div class="project-thumb">
+                                    <a href="#"> <img alt="Image" class="border--round" src="{{ asset('stack/img/work-4.jpg') }}"> </a>
+                                    <h4 class="featured_developments_title">Deveplopment Name</h4> 
+                                    <h4 class="featured_developments_subtitle">Toronto | 1234 Long Street Address</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center pt-4">
+                        <button class="btn_connect_button mr-4">View Developments</button>
+                        <button class="btn_connect_button">ROI Calculator</button>
+                    </div>
+                </div>
+            </section>
+            <section class="switchable feature-large" style="padding-top:8rem;">
+                <div class="container" style="margin-left:1rem;margin-right:1rem;">
                     <div class="row justify-content-around">
-                        <div class="col-md-6"> <img alt="Image" class="border--round box-shadow-wide" src="{{ asset('stack/img/landing-11.jpg') }}"> </div>
-                        <div class="col-md-6 col-lg-5">
+                        <div class="col-md-6"> 
+                            <img alt="Image" class="border--round" src="{{ asset('uploads/cover_circle_image.png') }}"> 
+                        </div>
+                        <div class="col-md-6 col-lg-5 text-center">
                             <div class="switchable__text">
-                                <h2>Perfect for bootstrapped startups</h2>
-                                <p class="lead"> Launching an attractive and scalable website quickly and affordably is important for modern startups — Stack offers massive value without looking 'bargain-bin'. </p> <a href="#">Learn More »</a> </div>
+                                <h2 style="color:#403254;font-family:Roboto;font-weight:700;">Our Resources</h2>
+                                <p style="color:#000; font-weight:400; font-size:16px;" class="mt-5 pt-0">
+                                    Learn more about real estate investing, what
+                                    makes our services different, and the outcomes
+                                    we’ve helped clients achieve.
+                                </p>
+                                <button class="btn_connect_button">Our FAQs</button>
+                                <button class="btn_connect_button">Case Studies</button>
+                             </div>
                         </div>
                     </div>
                 </div>

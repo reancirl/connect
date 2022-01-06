@@ -28,3 +28,51 @@
     background-color: transparent;
     color: #79c9d1;
 }
+.search_fields {
+    border: #3a3594 1px solid !important;
+    color: #3a3594 !important;
+    text-align: center !important;
+    font-size: 0.9rem;
+}
+.thin_border_right {
+    border-right: 0.5px !important;
+}
+.search_input::placeholder {
+    color: #3a3594 !important;
+    opacity: 1;
+    font-size: 0.9rem;
+}
+.development_slider_number {
+    color: #ffffff;
+    font-family: "Roboto", Sans-serif;
+    font-size: 125px;
+    font-weight: 600;
+    padding-left: 5rem;
+    margin-top: -1.8rem;
+    margin-bottom: 0px;
+    line-height: normal;
+}
+.development_slider_title {
+    color: #3a3594;
+    font-family: "Roboto", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+    padding-left: 5rem;
+}
+.featured_developments_title {
+    margin-bottom: 8px;
+    color: #3a3594;
+    font-family: "Roboto", Sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: underline;
+    text-align: left;
+}
+.featured_developments_subtitle {
+    color: #000000;
+    font-family: "Roboto", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left !important;
+}

@@ -29,7 +29,7 @@
                             {{ $d->created_by }}
                         </td>
                         <td>
-                            {{ $d->created_at }}
+                            {{ date('M d, Y', strtotime($d->created_at)); }}
                         </td>
                         <td>
 
