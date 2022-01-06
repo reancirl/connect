@@ -274,17 +274,20 @@
                 </div>
             </section>
             <section class="switchable feature-large" style="padding-top:8rem;">
-                <div class="container" style="margin-left:1rem;margin-right:1rem;">
+                <div class="container" style="">
                     <div class="row justify-content-around">
-                        <div class="col-md-6"> 
+                        <div class="col-md-5"> 
                             <img alt="Image" class="border--round" src="{{ asset('uploads/cover_circle_image.png') }}"> 
                         </div>
-                        <div class="col-md-6 col-lg-5 text-center">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5 col-lg-5 text-center">
                             <div class="switchable__text">
-                                <h2 style="color:#403254;font-family:Roboto;font-weight:700;">Our Resources</h2>
-                                <p style="color:#000; font-weight:400; font-size:16px;" class="mt-5 pt-0">
-                                    Learn more about real estate investing, what
+                                <h2 style="color:#403254;font-family:Roboto;font-weight:900;font-size:3.4rem;padding-bottom:0px;margin-bottom:0px;padding-top:5rem;">Our Resources</h2>
+                                <p style="color:#000; font-weight:400; font-size:16px;" class="mt-0 pt-0">
+                                    Learn more about real estate investing, what 
+                                    <br>
                                     makes our services different, and the outcomes
+                                    <br>
                                     we’ve helped clients achieve.
                                 </p>
                                 <button class="btn_connect_button">Our FAQs</button>
@@ -294,61 +297,59 @@
                     </div>
                 </div>
             </section>
-            <section class="text-center">
+            <section class="text-center" style="padding-top:8rem;padding-bottom:8rem;">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-lg-6">
+                    <div class="row mb-5">
+                        <div class="col-md-5 col-lg-5">
                             <div class="cta">
-                                <h2>Purchase Stack now and get lifetime free content updates</h2>
-                                <p class="lead"> Each purchase of Stack comes with six months free support — and a lifetime of free content and bug-fix updates. </p>
-                                <a class="btn btn--primary type--uppercase" href="#purchase-template"> <span class="btn__text">
-                            Purchase on Envato
-                        </span> <span class="label">$18 USD</span> </a>
+                                <h2 style="color:#403254;font-family:Roboto;font-weight:900;font-size:3rem;" class="">
+                                    Investing In Success
+                                </h2>
+                                <p style="color:#000; font-weight:400; font-size:16px;" class="mb-5">
+                                    Our personal real estate portfolios are a testament to our expertise. Find out more about our full-circle investment process—and start securing your future.
+                                </p>                                
                             </div>
+                            <button class="btn_connect_button">Our FAQs</button>
+                            <button class="btn_connect_button">Case Studies</button>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="imageblock switchable feature-large height-100">
-                <div class="imageblock__content col-lg-6 col-md-4 pos-right">
-                    <div class="background-image-holder"> <img alt="image" src="{{ asset('stack/img/inner-3.jpg') }}"> </div>
+            <section class="row mt-0 pt-0 mb-0 pb-0">
+                <div class="col">
+                
                 </div>
-                <div class="container pos-vertical-center">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-7">
-                            <h1>Launching Soon</h1> <span class="h2 countdown color--primary" data-date="09/25/2018" data-fallback-text="Getting ready"></span>
-                            <p class="lead">We're preparing to launch soon — hit the form below and we'll let you know when we're live.</p>
-                            <form action="//mrare.us8.list-manage.com/subscribe/post?u=77142ece814d3cff52058a51f&amp;id=f300c9cce8" data-success="Thanks for signing up.  Please check your inbox for a confirmation email." data-error="Please provide your email address.">
-                                <div class="row">
-                                    <div class="col-12"> <input class="validate-required validate-email" type="email" name="EMAIL" placeholder="Email Address"> </div>
-                                    <div class="col-12"> <button type="submit" class="btn btn--primary type--uppercase">Notify Me</button> </div>
-                                    <div class="col-12"> <span class="type--fine-print">By signing up, you agree to the <a href="#">Terms of Service</a></span> </div>
-                                    <div style="position: absolute; left: -5000px" aria-hidden="true"> <input type="text" name="b_77142ece814d3cff52058a51f_f300c9cce8" tabindex="-1" value=""> </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                <div class="col-lg-6 col-md-4 text-center" style="background-color:#403254;height:100vh;">
+                    <h2 style="font-weight:900; color:#fff; font-family:Roboto; font-size: 3rem;margin-top:40%;" >
+                        The Connect Blog
+                    </h2>
+                    <p style="color:#fff; font-weight:400; font-size:18px;">
+                        Visit our blog for up-to-date real estate
+                        <br>
+                        insight, market trends, investment tips,
+                        <br>
+                        and much more.
+                    </p>
+                    <button class="btn_connect_button mr-4">Read Posts</button>
                 </div>
             </section>
-            <section class="imageblock switchable feature-large height-100">
-                <div class="imageblock__content col-lg-6 col-md-4 pos-right">
-                    <div class="background-image-holder"> <img alt="image" src="{{ asset('stack/img/inner-3.jpg') }}"> </div>
+            <section class="row mt-0 pt-0 mb-0 pb-0">
+                <div class="col-lg-6 col-md-4 text-center" style="background-color:#3A3594;height:100vh;">
+                    <h2 style="font-weight:900; color:#fff; font-family:Roboto; font-size: 3rem;margin-top:40%;" >
+                        About Connect
+                    </h2>
+                    <p style="color:#fff; font-weight:400; font-size:18px;">
+                        Here’s how we’ve gone from being first-time home
+                        <br>
+                        buyers to seasoned investors to Canada’s leading full-
+                        <br>
+                        service real estate providers.
+                    </p>
+                    <button class="btn_connect_button mr-4">Read Our Story</button>
+                    <button class="btn_connect_button">Meet The Team</button>
                 </div>
-                <div class="container pos-vertical-center">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-7">
-                            <h1>Launching Soon</h1> <span class="h2 countdown color--primary" data-date="09/25/2018" data-fallback-text="Getting ready"></span>
-                            <p class="lead">We're preparing to launch soon — hit the form below and we'll let you know when we're live.</p>
-                            <form action="//mrare.us8.list-manage.com/subscribe/post?u=77142ece814d3cff52058a51f&amp;id=f300c9cce8" data-success="Thanks for signing up.  Please check your inbox for a confirmation email." data-error="Please provide your email address.">
-                                <div class="row">
-                                    <div class="col-12"> <input class="validate-required validate-email" type="email" name="EMAIL" placeholder="Email Address"> </div>
-                                    <div class="col-12"> <button type="submit" class="btn btn--primary type--uppercase">Notify Me</button> </div>
-                                    <div class="col-12"> <span class="type--fine-print">By signing up, you agree to the <a href="#">Terms of Service</a></span> </div>
-                                    <div style="position: absolute; left: -5000px" aria-hidden="true"> <input type="text" name="b_77142ece814d3cff52058a51f_f300c9cce8" tabindex="-1" value=""> </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                <div class="col" style="background-image:url('{{ asset('uploads/owners.jpeg') }}'); background-size: cover;">
+                
                 </div>
             </section>
         </div>
