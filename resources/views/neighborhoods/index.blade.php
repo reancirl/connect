@@ -25,7 +25,7 @@
                             {{ $d->title }}
                         </td>
                         <td>
-                            {{ $d->created_by }}
+                            {{ $d->author->name ?? '' }}
                         </td>
                         <td>
                             

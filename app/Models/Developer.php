@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Developer extends Model
 {
-    use HasFactory;
+    public function author() {
+        return $this->belongsTo('App\Models\User','created_by','id');
+    }
 }

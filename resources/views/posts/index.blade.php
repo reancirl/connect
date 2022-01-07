@@ -15,6 +15,7 @@
                     <th width="30%">Title</th>
                     <th>Author</th>
                     <th>Category</th>
+                    <th>Status</th>
                     <th>Date</th>
                     <th width="15%">Action</th>
                 </tr>
@@ -26,7 +27,10 @@
                             {{ $d->title }}
                         </td>
                         <td>
-                            {{ $d->created_by }}
+                            {{ $d->author->name ?? '' }}
+                        </td>
+                        <td>
+
                         </td>
                         <td>
                             
@@ -35,9 +39,9 @@
 
                         </td>
                         <td>
-                            <button class="btn btn-success btn-sm">View</button>
-                            <button class="btn btn-primary btn-sm">Edit</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
+                            <a class="btn btn-success btn-sm">View</a>
+                            <a href="{{ route('post.edit',$d->id) }}" class="btn btn-primary btn-sm">Edit</a>
+                            <a class="btn btn-danger btn-sm">Delete</a>
                         </td>
                     </tr>
                 @endforeach

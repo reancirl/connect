@@ -26,7 +26,7 @@
                             {{ $d->title }}
                         </td>
                         <td>
-                            {{ $d->created_by }}
+                            {{ $d->author->name ?? '' }}
                         </td>
                         <td>
                             {{ date('M d, Y', strtotime($d->created_at)); }}

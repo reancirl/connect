@@ -14,7 +14,8 @@ class MenuController extends Controller
      */
     public function index()
     {
-        return view('menus.index');
+        $data = Menu::get();
+        return view('menus.index',compact('data'));
     }
 
     /**
@@ -55,9 +56,10 @@ class MenuController extends Controller
      * @param  \App\Models\Menu  $menu
      * @return \Illuminate\Http\Response
      */
-    public function edit(Menu $menu)
+    public function edit($id)
     {
-        //
+        $data = Menu::with('items.sub_menu')->find($id);
+        return view('menus.edit',compact('data'));
     }
 
     /**
