@@ -12,7 +12,7 @@ use App\Http\Controllers\MediaController;
 use App\Http\Controllers\MenuController;
 
 Route::get('/', function () {
-    return view('layouts.frontend');
+    return view('frontend.home');
 });
 
 Auth::routes(['register' => false]);
