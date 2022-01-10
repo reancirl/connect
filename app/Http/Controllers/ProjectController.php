@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Project;
+use App\Models\Neighborhood;
+use App\Models\Developer;
 use Illuminate\Http\Request;
+use Auth;
+use Illuminate\Support\Facades\Redirect;
 
 class ProjectController extends Controller
 {
@@ -14,8 +18,15 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $data = Project::get();
-        return view('projects.index',compact('data'));
+        $data = Project::join('neighborhoods', 'neighborhoods.id', 'projects.neighborhood_id')
+            ->join('developers', 'developers.id', 'projects.developer_id')
+            ->select('projects.*', 'neighborhoods.title as neighborhoodsTitle', 'developers.title as devTitle')
+            ->get();
+
+        $neighborhoods = Neighborhood::get();
+        $developers = Developer::get();
+
+        return view('projects.index',compact('data', 'neighborhoods', 'developers'));
     }
 
     /**
@@ -36,7 +47,21 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $project = new Project;
+        $project->created_by = Auth::user()->id;
+        $project->neighborhood_id = $request->neighborhood_id;
+        $project->developer_id = $request->developer_id;
+        $project->address = $request->address;
+        $project->sales_status = $request->sales_status;
+        $project->title = $request->title;
+        $project->excerpt = $request->excerpt;
+        $project->status = $request->status;
+        $project->name = $request->name;
+        $project->is_featured = $request->is_featured;
+        $project->content = $request->content;
+        $project->save();
+
+        return Redirect::to('/project')->with('success', 'Successfully Update Project');
     }
 
     /**
@@ -58,7 +83,16 @@ class ProjectController extends Controller
      */
     public function edit(Project $project)
     {
-        //
+        $data = Project::join('neighborhoods', 'neighborhoods.id', 'projects.neighborhood_id')
+            ->join('developers', 'developers.id', 'projects.developer_id')
+            ->select('projects.*', 'neighborhoods.title as neighborhoodsTitle', 'developers.title as devTitle')
+            ->where('projects.id', $project->id)
+            ->first();
+        
+        $neighborhoods = Neighborhood::get();
+        $developers = Developer::get();
+
+        return view('projects._edit',compact('data', 'neighborhoods', 'developers'));
     }
 
     /**
@@ -70,7 +104,20 @@ class ProjectController extends Controller
      */
     public function update(Request $request, Project $project)
     {
-        //
+        $project->created_by = Auth::user()->id;
+        $project->neighborhood_id = $request->neighborhood_id;
+        $project->developer_id = $request->developer_id;
+        $project->address = $request->address;
+        $project->sales_status = $request->sales_status;
+        $project->title = $request->title;
+        $project->excerpt = $request->excerpt;
+        $project->status = $request->status;
+        $project->name = $request->name;
+        $project->is_featured = $request->is_featured;
+        $project->content = $request->content;
+        $project->update();
+
+        return Redirect::to('/project')->with('success', 'Successfully Update Project');
     }
 
     /**
@@ -81,6 +128,7 @@ class ProjectController extends Controller
      */
     public function destroy(Project $project)
     {
-        //
+        $project->delete();
+        return redirect()->back()->with('success','Successfully Deleted Project');    
     }
 }
