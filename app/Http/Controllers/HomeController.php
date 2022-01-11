@@ -25,4 +25,10 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function thankyou()
+    {
+        return view('frontend.thankyou');
+    }
+
 }

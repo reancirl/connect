@@ -18,6 +18,9 @@ Route::get('/', function () {
 Auth::routes(['register' => false]);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Route::get('/thank-you', [HomeController::class, 'thankyou'])->name('thankyou');
+
 Route::middleware(['auth'])->group(function () {
     Route::resource('post', PostController::class);
     Route::resource('category', PostCategoryController::class);
@@ -28,3 +31,4 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('page', PagesController::class);
     Route::resource('menu', MenuController::class);
 });
+
