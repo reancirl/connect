@@ -10,4 +10,10 @@ class Developer extends Model
     public function author() {
         return $this->belongsTo('App\Models\User','created_by','id');
     }
+
+    public function projects()
+    {
+        return $developer->hasMany(Project::class);
+    }
+
 }

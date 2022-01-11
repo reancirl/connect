@@ -142,5 +142,6 @@
             $('#wysiwyg').trumbowyg();
         });
     </script>
+    @yield('script')
 </body>
 </html>
