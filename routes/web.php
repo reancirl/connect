@@ -17,9 +17,9 @@ Route::get('/', function () {
 
 Auth::routes(['register' => false]);
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
-
 Route::get('/thank-you', [HomeController::class, 'thankyou'])->name('thankyou');
+
+Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');
 
 Route::middleware(['auth'])->group(function () {
     Route::resource('post', PostController::class);
