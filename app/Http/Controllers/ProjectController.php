@@ -18,8 +18,8 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $data = Project::join('neighborhoods', 'neighborhoods.id', 'projects.neighborhood_id')
-            ->join('developers', 'developers.id', 'projects.developer_id')
+        $data = Project::leftjoin('neighborhoods', 'neighborhoods.id', 'projects.neighborhood_id')
+            ->leftjoin('developers', 'developers.id', 'projects.developer_id')
             ->select('projects.*', 'neighborhoods.title as neighborhoodsTitle', 'developers.title as devTitle')
             ->get();
 
@@ -83,8 +83,8 @@ class ProjectController extends Controller
      */
     public function edit(Project $project)
     {
-        $data = Project::join('neighborhoods', 'neighborhoods.id', 'projects.neighborhood_id')
-            ->join('developers', 'developers.id', 'projects.developer_id')
+        $data = Project::leftjoin('neighborhoods', 'neighborhoods.id', 'projects.neighborhood_id')
+            ->leftjoin('developers', 'developers.id', 'projects.developer_id')
             ->select('projects.*', 'neighborhoods.title as neighborhoodsTitle', 'developers.title as devTitle')
             ->where('projects.id', $project->id)
             ->first();
