@@ -67,6 +67,65 @@
         <div class="main-container">
             @yield('content')
         </div>
+
+        <footer class="row mt-0 pt-0 mb-0 pb-0">
+            <div class="col-sm-7 text-center" style="background-color:#564e62;height:70vh;">
+                <div class="row" style="margin-top:10%;">
+                    <div class="col-sm-5 text-left" style="padding-left:17%;">
+                        <h2 style="color: #FFDE59;font-size: 35px; font-weight: 700;" class="mb-3 pb-0">Let's Talk</h2>
+                        <p style="color: #FFDE59; font-family: "Ropa Sans", Sans-serif; font-size: 18px; font-weight: 400;">We always want to know more about our clients. Fill out the form below to reach out.</p>
+                    </div>
+                    <div class="col-sm-7" style="padding-right:5%;padding-left:5%;">
+                        <form action="">
+                            <input type="text" class="footer_input footer_input_size_custom" placeholder="Your First Name">
+                            <input type="text" class="footer_input footer_input_size_custom mt-3" placeholder="Your Last Name">
+                            <input type="text" class="footer_input footer_input_size_custom mt-3" placeholder="Your Email Address">
+                            <input type="text" class="footer_input footer_input_size_custom mt-3" placeholder="Your Phone Number">
+                            <textarea name="" id="" cols="30" rows="3" class="footer_input mt-3" placeholder="How can we help?"></textarea>
+
+                            <div class="row">
+                                <div class="col-sm-7"></div>
+                                <div class="col-sm-5 pr-2">
+                                    <button type="submit" class="btn_connect_button mt-3">Let's Connect</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 text-left p-5" style="background-color:#403254;height:70vh;">
+                <img src="{{ asset('img/connect_logo_light.png') }}" alt="logo_light" width="70%">
+                <div class="p-2" style="color:#fff;">
+                    <h4 style="color: #FFFFFF;font-size: 1.3rem;font-weight: 400;" class="mb-3 pb-0">Contact Us</h4>
+                    <p class="pb-0 mb-0" style="font-size:.8rem">Direct: <a href="tel:4168009272" style="color:#79c9d1;">416.800.9272</a></p>
+                    <p style="font-size:.8rem">Email: <a href="mailto:admin@connect.ca" style="color:#79c9d1;">admin@connect.ca</a></p>
+
+                    <p class="pb-0 mb-0" style="font-size:.8rem">
+                        Keller Williams Referred Urban Connect Realty
+                        <br>
+                        624 King Street West Lower Level
+                        <br>
+                        Toronto, ON M5V 1M7
+                    </p>
+
+                    <h4 style="color: #FFFFFF;font-size: 1.3rem;font-weight: 400;" class="mt-3 pb-0 mb-1">Follow Us</h4>
+                    <ul class="menu-horizontal">
+                        <li><a href="#" style="opacity:1;"><i class="socicon socicon-instagram icon icon--xs icon_footer"></i></a></li>
+                        <li><a href="#" style="opacity:1;"><i class="socicon socicon-twitter icon icon--xs icon_footer"></i></a></li>
+                        <li><a href="#" style="opacity:1;"><i class="socicon socicon-linkedin icon icon--xs icon_footer"></i></a></li>
+                        <li><a href="#" style="opacity:1;"><i class="socicon socicon-facebook icon icon--xs icon_footer"></i></a></li>
+                        <li><a href="#" style="opacity:1;"><i class="socicon socicon-youtube icon icon--xs icon_footer"></i></a></li>
+                    </ul>
+
+                    <p class="" style="font-size:.8rem">
+                        © Connect.ca 2020 | <a href="" style="color:#79c9d1;">Privacy Policy</a> | <a href="" style="color:#79c9d1;">Contact Us</a>
+                        <br>
+                        Made by MergedMedia
+                    </p>
+                </div>
+            </div>
+        </footer>
+
         <script src="{{ asset('stack/js/jquery-3.1.1.min.js') }}"></script>
         <script src="{{ asset('stack/js/flickity.min.js') }}"></script>
         <script src="{{ asset('stack/js/parallax.js') }}"></script>
