@@ -18,6 +18,7 @@ Route::get('/', function () {
 Auth::routes(['register' => false]);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/our-story', [HomeController::class, 'ourstory']);
 Route::middleware(['auth'])->group(function () {
     Route::resource('post', PostController::class);
     Route::resource('category', PostCategoryController::class);
@@ -27,4 +28,5 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('media', MediaController::class);
     Route::resource('page', PagesController::class);
     Route::resource('menu', MenuController::class);
+   
 });
