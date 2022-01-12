@@ -130,6 +130,7 @@
         </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
     <script>
         $(document).ready( function () {
@@ -142,6 +143,69 @@
             $('#wysiwyg').trumbowyg();
         });
     </script>
+
+
     @yield('script')
+    <script type="text/javascript">      
+        var success = "{{ Session::get('success') }}";
+        if (success) {
+            swal ({
+                text: success,
+                icon: 'success',
+                button: 'OK',
+            });
+        }
+  
+        var deleted = "{{ Session::get('deleted') }}";
+        if (deleted) {
+            swal ({
+                text: deleted,
+                icon: 'error',
+                button: 'OK',
+            });
+        }
+  
+        var error = "{{ Session::get('error') }}";
+        if (error) {
+            swal ({
+                text: error,
+                icon: 'error',
+                button: 'OK',
+            });
+        }
+  
+        var danger = "{{ Session::get('flash_danger') }}";
+        if (danger) {
+            swal ({
+                text: danger,
+                icon: 'error',
+                button: 'OK',
+            });
+        }
+  
+        var warning = "{{ Session::get('warning') }}";
+        if (warning) {
+            swal ({
+                text: warning,
+                icon: 'info',
+                button: 'OK',
+            });
+        }
+  
+        var errors = $('.alert-errors').length;
+        var html_errors = $('#html_errors').val();
+        if(errors){
+            swal ({
+                text: html_errors,
+                icon: 'error',
+                button: 'OK',
+            });
+        }
+  
+        $('.logout-link').on('click', function(e) {
+          $(this).closest('form').submit();
+        })
+      </script>
+
 </body>
 </html>

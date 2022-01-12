@@ -13,7 +13,7 @@ class Developer extends Model
 
     public function projects()
     {
-        return $developer->hasMany(Project::class);
+        return $this->hasMany(Project::class); 
     }
 
 }
