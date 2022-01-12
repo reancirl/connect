@@ -18,13 +18,12 @@ Route::get('/', function () {
 Auth::routes(['register' => false]);
 
 Route::get('/thank-you', [HomeController::class, 'thankyou'])->name('thankyou');
-<<<<<<< HEAD
+
 Route::get('/resale-real-estate-services', [HomeController::class, 'rres'])->name('rres');
-=======
+
 
 Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');
 
->>>>>>> 403ebcd5a21947a4646e67fe0b30fce5734c059c
 Route::middleware(['auth'])->group(function () {
     Route::resource('post', PostController::class);
     Route::resource('category', PostCategoryController::class);
