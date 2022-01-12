@@ -12,21 +12,20 @@
     font-family: "Ropa Sans", Sans-serif;
     font-weight: 600;
     fill: #3a3594;
-    color: #3a3594;
+    color: #3a3594 !important;
     background-color: #79c9d1;
     border-style: solid;
     border-width: 2px 2px 2px 2px;
     border-color: #79c9d1;
     border-radius: 30px 30px 30px 30px;
     font-size: 0.9rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: .8rem 1rem .8rem 1rem;
     cursor: pointer;
 }
 .btn_connect_button:hover {
     border-color: #79c9d1;
     background-color: transparent;
-    color: #79c9d1;
+    color: #79c9d1 !important;
 }
 .search_fields {
     border: #3a3594 1px solid !important;
@@ -96,4 +95,7 @@
 .icon_footer {
     color: #79c9d1 !important;
     opacity: 1 !important;
+}
+.accordion__title::before {
+    display:none;
 }
