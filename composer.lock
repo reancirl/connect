@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b8adc0ada37a8d80a1ed357f5b93689",
+    "content-hash": "af67f6042843ee7293a9fc3fad887168",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -125,7 +125,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-08-15T20:50:18+00:00"
         },
         {
@@ -219,7 +223,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-10-22T20:16:43+00:00"
         },
         {
@@ -302,7 +310,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-05-25T17:44:05+00:00"
         },
         {
@@ -366,7 +378,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2022-01-06T05:35:07+00:00"
         },
         {
@@ -437,7 +453,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-12-29T14:50:06+00:00"
         },
         {
@@ -521,7 +541,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2022-01-03T14:53:04+00:00"
         },
         {
@@ -586,7 +610,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-11-21T21:41:47+00:00"
         },
         {
@@ -713,7 +741,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-06T18:43:05+00:00"
         },
         {
@@ -800,7 +832,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-10-22T20:56:57+00:00"
         },
         {
@@ -899,6 +935,43 @@
                 "url"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            "time": "2021-10-06T17:43:30+00:00"
+        },
+        {
+            "name": "intervention/image",
+            "version": "2.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/image.git",
+                "reference": "744ebba495319501b873a4e48787759c72e3fb8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/744ebba495319501b873a4e48787759c72e3fb8c",
+                "reference": "744ebba495319501b873a4e48787759c72e3fb8c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "guzzlehttp/psr7": "~1.1 || ^2.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.2",
+                "phpunit/phpunit": "^4.8 || ^5.7 || ^7.5.15"
+            },
+            "suggest": {
+                "ext-gd": "to use GD library based image processing.",
+                "ext-imagick": "to use Imagick based image processing.",
+                "intervention/imagecache": "Caching extension for the Intervention Image library"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
 =======
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
@@ -912,14 +985,49 @@
                 {
                     "url": "https://github.com/Nyholm",
                     "type": "github"
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
                 },
+                "laravel": {
+                    "providers": [
+                        "Intervention\\Image\\ImageServiceProvider"
+                    ],
+                    "aliases": {
+                        "Image": "Intervention\\Image\\Facades\\Image"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Image\\": "src/Intervention/Image"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
                 {
-                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/psr7",
-                    "type": "tidelift"
+                    "name": "Oliver Vogel",
+                    "email": "oliver@olivervogel.com",
+                    "homepage": "http://olivervogel.com/"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
             "time": "2021-10-06T17:43:30+00:00"
+=======
+            "description": "Image handling and manipulation library with support for Laravel integration",
+            "homepage": "http://image.intervention.io/",
+            "keywords": [
+                "gd",
+                "image",
+                "imagick",
+                "laravel",
+                "thumbnail",
+                "watermark"
+            ],
+            "time": "2021-12-16T16:49:26+00:00"
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
         },
         {
             "name": "laravel/framework",
@@ -1093,7 +1201,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2022-01-05T14:52:50+00:00"
         },
         {
@@ -1348,11 +1460,27 @@
             "support": {
                 "source": "https://github.com/laravel/ui/tree/v3.4.1"
             },
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-22T10:40:50+00:00"
         },
         {
             "name": "league/commonmark",
+<<<<<<< HEAD
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark.git",
+                "reference": "17d2b9cb5161a2ea1a8dd30e6991d668e503fb9d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/17d2b9cb5161a2ea1a8dd30e6991d668e503fb9d",
+                "reference": "17d2b9cb5161a2ea1a8dd30e6991d668e503fb9d",
+=======
             "version": "1.6.6",
             "source": {
                 "type": "git",
@@ -1363,6 +1491,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/c4228d11e30d7493c6836d20872f9582d8ba6dcf",
                 "reference": "c4228d11e30d7493c6836d20872f9582d8ba6dcf",
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
                 "shasum": ""
             },
             "require": {
@@ -1419,6 +1548,72 @@
                 "parser"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            "time": "2022-01-02T18:25:06+00:00"
+        },
+        {
+            "name": "league/config",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/config.git",
+                "reference": "a9d39eeeb6cc49d10a6e6c36f22c4c1f4a767f3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/config/zipball/a9d39eeeb6cc49d10a6e6c36f22c4c1f4a767f3e",
+                "reference": "a9d39eeeb6cc49d10a6e6c36f22c4c1f4a767f3e",
+                "shasum": ""
+            },
+            "require": {
+                "dflydev/dot-access-data": "^3.0.1",
+                "nette/schema": "^1.2",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.90",
+                "phpunit/phpunit": "^9.5.5",
+                "scrutinizer/ocular": "^1.8.1",
+                "unleashedtech/php-coding-standard": "^3.1",
+                "vimeo/psalm": "^4.7.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Config\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "https://www.colinodell.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Define configuration arrays with strict schemas and access values with dot notation",
+            "homepage": "https://config.thephpleague.com",
+            "keywords": [
+                "array",
+                "config",
+                "configuration",
+                "dot",
+                "dot-access",
+                "nested",
+                "schema"
+            ],
+            "time": "2021-08-14T12:15:32+00:00"
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
 =======
             "support": {
                 "docs": "https://commonmark.thephpleague.com/",
@@ -1454,6 +1649,7 @@
             ],
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
             "time": "2021-07-17T17:13:23+00:00"
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
         },
         {
             "name": "league/flysystem",
@@ -1549,7 +1745,11 @@
                     "type": "other"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-09T09:40:50+00:00"
         },
         {
@@ -1608,7 +1808,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-11-21T11:48:40+00:00"
         },
         {
@@ -1710,7 +1914,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-10-01T21:08:31+00:00"
         },
         {
@@ -1809,7 +2017,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-03T14:59:52+00:00"
         },
         {
@@ -2004,7 +2216,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-04T23:24:31+00:00"
         },
         {
@@ -2567,7 +2783,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-10-10T03:01:02+00:00"
         },
         {
@@ -2668,7 +2888,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-09-25T23:10:38+00:00"
         },
         {
@@ -2746,7 +2970,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "abandoned": "symfony/mailer",
             "time": "2021-10-18T15:26:12+00:00"
         },
@@ -2849,7 +3077,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-20T16:11:12+00:00"
         },
         {
@@ -2918,7 +3150,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-16T21:58:21+00:00"
         },
         {
@@ -2988,7 +3224,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-07-12T14:48:14+00:00"
         },
         {
@@ -3062,7 +3302,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-19T20:02:00+00:00"
         },
         {
@@ -3150,7 +3394,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-11-23T10:19:22+00:00"
         },
         {
@@ -3232,7 +3480,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-07-12T14:48:14+00:00"
         },
         {
@@ -3298,7 +3550,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-15T11:06:13+00:00"
         },
         {
@@ -3374,7 +3630,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-28T17:15:56+00:00"
         },
         {
@@ -3472,6 +3732,8 @@
             ],
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
+=======
             "support": {
                 "source": "https://github.com/symfony/http-kernel/tree/v5.4.2"
             },
@@ -3491,10 +3753,14 @@
                 }
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
 =======
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-29T13:20:26+00:00"
         },
         {
@@ -3580,7 +3846,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-28T17:15:56+00:00"
         },
         {
@@ -3665,7 +3935,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-10-20T20:35:02+00:00"
         },
         {
@@ -3751,7 +4025,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2022-01-04T09:04:05+00:00"
         },
         {
@@ -3835,7 +4113,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-11-23T21:10:46+00:00"
         },
         {
@@ -3925,7 +4207,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-09-14T14:02:44+00:00"
         },
         {
@@ -4012,7 +4298,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-02-19T12:13:01+00:00"
         },
         {
@@ -4098,7 +4388,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-11-30T18:21:41+00:00"
         },
         {
@@ -4177,7 +4471,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-05-27T09:17:38+00:00"
         },
         {
@@ -4259,7 +4557,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-06-05T21:20:04+00:00"
         },
         {
@@ -4345,7 +4647,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-09-13T13:58:33+00:00"
         },
         {
@@ -4427,7 +4733,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-09-13T13:58:11+00:00"
         },
         {
@@ -4492,7 +4802,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-27T21:01:00+00:00"
         },
         {
@@ -4585,7 +4899,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-11-23T10:19:22+00:00"
         },
         {
@@ -4671,7 +4989,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-11-04T16:48:04+00:00"
         },
         {
@@ -4760,7 +5082,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-16T21:52:00+00:00"
         },
         {
@@ -4860,7 +5186,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-25T19:45:36+00:00"
         },
         {
@@ -4941,7 +5271,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-08-17T14:20:01+00:00"
         },
         {
@@ -5033,7 +5367,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-29T10:10:35+00:00"
         },
         {
@@ -5169,7 +5507,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-12T23:22:04+00:00"
         },
         {
@@ -5246,7 +5588,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-11-12T00:07:28+00:00"
         },
         {
@@ -5378,7 +5724,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-11-10T18:47:58+00:00"
         },
         {
@@ -5446,7 +5796,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-09-13T12:16:46+00:00"
         },
         {
@@ -5527,7 +5881,11 @@
                 "issues": "https://github.com/facade/ignition/issues",
                 "source": "https://github.com/facade/ignition"
             },
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-27T15:11:24+00:00"
         },
         {
@@ -5719,7 +6077,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2022-01-07T12:00:00+00:00"
         },
         {
@@ -5963,7 +6325,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-11-13T09:40:50+00:00"
         },
         {
@@ -6053,7 +6419,11 @@
                     "type": "patreon"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-09-20T15:06:32+00:00"
         },
         {
@@ -6327,7 +6697,11 @@
                 "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
                 "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.6.0"
             },
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2022-01-04T19:58:01+00:00"
         },
         {
@@ -6474,7 +6848,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-05T09:12:13+00:00"
         },
         {
@@ -6537,7 +6915,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-02T12:48:52+00:00"
         },
         {
@@ -6603,7 +6985,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-09-28T05:58:55+00:00"
         },
         {
@@ -6665,7 +7051,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-10-26T05:33:50+00:00"
         },
         {
@@ -6727,7 +7117,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-10-26T13:16:10+00:00"
         },
         {
@@ -6833,7 +7227,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-12-25T07:07:57+00:00"
         },
         {
@@ -6892,7 +7290,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-09-28T06:08:49+00:00"
         },
         {
@@ -6951,7 +7353,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-10-26T13:08:54+00:00"
         },
         {
@@ -7009,7 +7415,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-09-28T05:30:19+00:00"
         },
         {
@@ -7086,7 +7496,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-10-26T15:49:45+00:00"
         },
         {
@@ -7146,7 +7560,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-10-26T15:52:27+00:00"
         },
         {
@@ -7215,7 +7633,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-10-26T13:10:38+00:00"
         },
         {
@@ -7281,7 +7703,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-09-28T05:52:38+00:00"
         },
         {
@@ -7361,7 +7787,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-11-11T14:18:36+00:00"
         },
         {
@@ -7428,7 +7858,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-06-11T13:31:12+00:00"
         },
         {
@@ -7488,7 +7922,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-11-28T06:42:11+00:00"
         },
         {
@@ -7548,7 +7986,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-10-26T13:12:34+00:00"
         },
         {
@@ -7606,7 +8048,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-10-26T13:14:26+00:00"
         },
         {
@@ -7672,7 +8118,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-10-26T13:17:30+00:00"
         },
         {
@@ -7730,7 +8180,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-09-28T06:45:17+00:00"
         },
         {
@@ -7789,7 +8243,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-06-15T12:49:02+00:00"
         },
         {
@@ -7845,7 +8303,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2020-09-28T06:39:44+00:00"
         },
         {
@@ -7898,7 +8360,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
             "time": "2021-07-28T10:34:58+00:00"
         }
     ],
@@ -7915,5 +8381,9 @@
 =======
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
+<<<<<<< HEAD
 >>>>>>> 11c876a0a4b72d23de0f308dc17348bc6c1a86a2
+=======
+>>>>>>> e3b9c5ebbc923b8eaf933c41a02dbb85dac43c17
+>>>>>>> 177d1f77b565ec80b8c4a91eb9ffe1eb73f0dd6a
 }
