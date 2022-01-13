@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ asset('css/frontend.css') }}">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </head>
     <body data-smooth-scroll-offset="77">
         <div class="nav-container" style="margin-bottom:3rem;padding-top:2rem;">
@@ -133,7 +133,8 @@
         <script src="{{ asset('stack/js/countdown.min.js') }}"></script>
         <script src="{{ asset('stack/js/smooth-scroll.min.js') }}"></script>
         <script src="{{ asset('stack/js/scripts.js') }}"></script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </body>
 
 </html>
