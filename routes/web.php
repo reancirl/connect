@@ -33,5 +33,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('media', MediaController::class);
     Route::resource('page', PagesController::class);
     Route::resource('menu', MenuController::class);
+
+    Route::get('import/projects', [ProjectController::class, 'import_view'])->name('project.import_view');
+    Route::post('import/projects', [ProjectController::class, 'import'])->name('project.import');
 });
 

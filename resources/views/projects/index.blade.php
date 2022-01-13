@@ -43,7 +43,8 @@
                         </td>
                         <td>
                             <button class="btn btn-success btn-sm">View</button>
-                            <button class="btn btn-primary btn-sm btn-edit" data-url="{{ route('project.edit',$d->id) }}">Edit</button>
+                            {{-- <button class="btn btn-primary btn-sm btn-edit" data-url="{{ route('project.edit',$d->id) }}">Edit</button> --}}
+                            <a class="btn btn-primary btn-sm" href="{{ route('project.edit',$d->id) }}">Edit</a>
                             
                             <form action="{{ route('project.destroy',$d->id) }}" method="post" style="display: inline-block; text-align: center; vertical-align: middle;">
                                 @csrf

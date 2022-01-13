@@ -69,7 +69,7 @@
         </div>
 
         <footer class="row mt-0 pt-0 mb-0 pb-0">
-            <div class="col-sm-7 text-center" style="background-color:#564e62;height:60vh;">
+            <div class="col-sm-7 text-center" style="background-color:#564e62;">
                 <div class="row" style="margin-top:10%;">
                     <div class="col-sm-5 text-left" style="padding-left:17%;">
                         <h2 style="color: #FFDE59;font-size: 35px; font-weight: 700;" class="mb-3 pb-0">Let's Talk</h2>
@@ -93,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5 text-left pt-5 pb-5 pl-5" style="background-color:#403254;height:60vh;">
+            <div class="col-sm-5 text-left pt-5 pb-5 pl-5" style="background-color:#403254;">
                 <img src="{{ asset('img/connect_logo_light.png') }}" alt="logo_light" width="60%">
                 <div class="p-2" style="color:#fff;">
                     <h4 style="color: #FFFFFF;font-size: 1.3rem;font-weight: 400;" class="mb-3 pb-0">Contact Us</h4>

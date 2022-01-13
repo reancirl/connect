@@ -38,8 +38,8 @@
                         <td>
                             
                             
-                            <button class="btn btn-primary btn-sm btn-view" data-url="{{ route('developer.show',$d->id) }}">View</button>
-                            <button class="btn btn-secondary btn-sm btn-edit" data-url="{{ route('developer.edit',$d->id) }}">Edit</button>
+                            <button class="btn btn-success btn-sm btn-view" data-url="{{ route('developer.show',$d->id) }}">View</button>
+                            <button class="btn btn-primary btn-sm btn-edit" data-url="{{ route('developer.edit',$d->id) }}">Edit</button>
                                 
                             <form action="{{ route('developer.destroy',$d->id) }}" method="POST" style="display: inline-block; text-align: center; vertical-align: middle;">
                                 @csrf

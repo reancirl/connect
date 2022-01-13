@@ -14,9 +14,7 @@
                         investment services
                     </u>
                     , Connect.ca hasn’t lost 
-                    <br> 
                     touch with the core functions every real estate brokerage is built on – buying 
-                    <br>                    
                     and selling property.</p>
             </div>
 

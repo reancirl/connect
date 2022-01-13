@@ -31,7 +31,7 @@
                     </select>
                 </div>
                 <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Name</span>
+                    <span class="input-group-text" id="basic-addon1">Slug/Name</span>
                     <input type="text" class="form-control" placeholder="Name" name="name" required aria-label="Username" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group mb-3">

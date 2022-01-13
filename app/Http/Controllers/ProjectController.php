@@ -11,11 +11,6 @@ use Illuminate\Support\Facades\Redirect;
 
 class ProjectController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $data = Project::leftjoin('neighborhoods', 'neighborhoods.id', 'projects.neighborhood_id')
@@ -29,22 +24,11 @@ class ProjectController extends Controller
         return view('projects.index',compact('data', 'neighborhoods', 'developers'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $project = new Project;
@@ -64,23 +48,11 @@ class ProjectController extends Controller
         return Redirect::to('/project')->with('success', 'Successfully Update Project');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Project  $project
-     * @return \Illuminate\Http\Response
-     */
     public function show(Project $project)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Project  $project
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Project $project)
     {
         $data = Project::leftjoin('neighborhoods', 'neighborhoods.id', 'projects.neighborhood_id')
@@ -92,16 +64,10 @@ class ProjectController extends Controller
         $neighborhoods = Neighborhood::get();
         $developers = Developer::get();
 
-        return view('projects._edit',compact('data', 'neighborhoods', 'developers'));
+        // return view('projects._edit',compact('data', 'neighborhoods', 'developers'));
+        return view('projects.edit',compact('data', 'neighborhoods', 'developers'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Project  $project
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, Project $project)
     {
         $project->created_by = Auth::user()->id;
@@ -120,15 +86,31 @@ class ProjectController extends Controller
         return Redirect::to('/project')->with('success', 'Successfully Update Project');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Project  $project
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Project $project)
     {
         $project->delete();
         return redirect()->back()->with('success','Successfully Deleted Project');    
+    }
+
+    public function import_view() 
+    {
+        $cols = ['Title'];
+        return view('projects.import',compact('cols'));
+    }
+
+    public function import(Request $request)
+    {
+        if ($request->import) {
+            foreach ($request->import as $i => $import) {
+                $data = Project::where('title',$import['Title'])->first();
+                if(!$data) {
+                    $project = new Project();
+                    $project->title = $import['Title'];
+                    $project->save();
+                }
+            }
+        }
+
+        return redirect()->back()->with('success','Imported Successfully!');
     }
 }
