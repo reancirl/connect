@@ -19,6 +19,7 @@ Auth::routes(['register' => false]);
 
 Route::get('/thank-you', [HomeController::class, 'thankyou'])->name('thankyou');
 Route::get('/join-our-inner-circle', [HomeController::class, 'join_our_inner_circle'])->name('join_our_inner_circle');
+Route::get('/individual-listing', [HomeController::class, 'individual_listing'])->name('individual_listing');
 
 Route::get('/resale-real-estate-services', [HomeController::class, 'rres'])->name('rres');
 Route::get('/investment-to-build-wealth', [HomeController::class, 'itbw'])->name('itbw');
