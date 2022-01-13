@@ -101,8 +101,4 @@ button.margin-right {
                     </div>
             </section>
         </div> 
-
-    
-
-
 @endsection

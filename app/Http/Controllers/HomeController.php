@@ -31,4 +31,8 @@ class HomeController extends Controller
         return view('frontend.thankyou');
     }
 
+    public function join_our_inner_circle()
+    {
+        return view('frontend.join_our_inner_circle');  
+    }
 }
