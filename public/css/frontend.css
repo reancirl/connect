@@ -99,3 +99,10 @@
 .accordion__title::before {
     display:none;
 }
+.sticky_form_input {
+    background-color: transparent !important;
+    border: 0.7px #fff solid;
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 0% !important;
+}

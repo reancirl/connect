@@ -130,17 +130,22 @@ button.margin-right {
     </div>
     <div class="container">
         <div class="row" >
-            <div class="col-lg-4 col-md-10"style="background-color: #000000; padding:70px 50px;">
+            <div class="col-lg-4 col-md-10"style="background-color: #000000; padding:50px 50px;">
                 <h2 style="  color: #FFDE59; font-family: 'Roboto', Sans-serif; font-size: 25px; font-weight: 600; text-align:center">Join the Club</h2>
                 <p style="text-align: center; color: #FFDE59;font-family: 'Ropa Sans', Sans-serif; font-size: 18px; font-weight: 400;">
                     Sharpen your investor’s edge and get a leg-up on securing the financial future of your dreams. Sign up for direct coaching and preferential access to our industry immersed founders through The Inner Circle here.
                 </p>
                 <form>
                     <div class="row">
-                        <div class="col-12" > <input type="first_name" name="First Name" placeholder="First Name"> </div>
+                        {{-- <div class="col-12" > <input type="first_name" name="First Name" placeholder="First Name"> </div>
                         <div class="col-12"> <input type="last_name" name="Last Name" placeholder="Last Name"> </div>
-                        <div class="col-12"> <input type="email_address" name="Email Address" placeholder="Email Address"> </div>
-                        <div class="col-12"> <textarea type="anything" name="Anything" placeholder="Is there anything else we should know?"> </textarea> </div>
+                        <div class="col-12"> <input type="email_address" name="Email Address" placeholder="Email Address"> </div> --}}
+                        <div class="col-12">
+                            <input type="text" class="sticky_form_input" placeholder="Your First Name">
+                            <input type="text" class="sticky_form_input" placeholder="Your Last Name">
+                            <input type="text" class="sticky_form_input" placeholder="Your Email Address">
+                            <textarea name="" id="" cols="30" rows="3" class="sticky_form_input mt-3" placeholder="How can we help?"></textarea>
+                        </div>
                         <div style="padding-left:55px;">
                             <button class="my-button" title="Relevant Title" href="#">Let's Connect</button>
                         </div>
