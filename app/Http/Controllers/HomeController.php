@@ -38,5 +38,9 @@ class HomeController extends Controller
     {
         return view('frontend.itbw');
     }
+     public function if()
+    {
+        return view('frontend.if');
+    }
 
 }
