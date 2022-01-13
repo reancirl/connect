@@ -56,8 +56,9 @@ button.margin-right {
                                     Just like everyone else, we started out as first-time homebuyers too, but, we quickly realized the tremendous potential for building wealth through real estate that the majority of people aren’t aware of. <br> <br> 
                                     For most Canadians, real estate offers the best, safest, and easiest return on their investment. Everyone wants a beautiful home, everyone wants financial freedom, and everyone wants to provide for their children and pass on generational wealth; but not everyone has the access, resources, or knowledge to do so.     
                                 </p>
-                                <h4  style="color: #3A3594; font-family: 'Ropa Sans', Sans-serif; font-weight: bold;font-size: 25px;">That’s why we started Connect.ca</h4>                       </div>
-                    </div>
+                                <h4  style="color: #3A3594; font-family: 'Ropa Sans', Sans-serif; font-weight: bold;font-size: 25px;">That’s why we started Connect.ca</h4>
+                            </div>
+                        </div>
                 </div>
             </section>
 
@@ -76,7 +77,8 @@ button.margin-right {
                                 <div class="switchable__text">
                                     <h2 style="color: #403254; font-family: 'Ropa Sans', Sans-serif; font-size: 26px; font-weight: bold; margin-top: 40px; text-align: left;">What We Do</h2>
                                     <p class="lead" style="color: #000000; font-family: 'Roboto', Sans-serif; font-size: 18px; font-weight: normal; margin-top: 40px; text-align: left; line-height: 24px;">We want to share our expertise and experience so you can reach your milestones and secure the home and financial freedom that you want. In our quest to make real estate simple, Connect.ca has grown to become Canada’s leading full-service real estate company—covering every step of the real estate and investment ladder. </p> 
-                                    
+                                    <a href="#" style="font-family: 'Gibson', Sans-serif; font-size: 14px; font-weight: 600; color: #3A3594; float: right">Read More »</a> 
+                                </div>
                             </div>
                             
                             <div  class="col-md-6 " > <img alt="Image"  style="width: 596px; height: 418px;" src="uploads/2-Interior-1.jpg"> </div>
