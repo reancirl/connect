@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+@include("developers._create")
 <div class="container">
     <div class="row">
         <h3>
             Developers
-            <a class="btn btn-primary btn-sm" href="{{ route('developer.create') }}">Add New</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#create_developer">Add new Developer</button>
         </h3>
         <hr>
 
@@ -23,7 +24,7 @@
                 @foreach ($data as $d)
                     <tr>
                         <td>
-                            {{ $d->title }}
+                            {{ $d->name }}
                         </td>
                         <td>
                             {{ $d->author->name ?? '' }}
@@ -35,9 +36,17 @@
 
                         </td>
                         <td>
-                            <button class="btn btn-success btn-sm">View</button>
-                            <button class="btn btn-primary btn-sm">Edit</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
+                            
+                            
+                            <button class="btn btn-success btn-sm btn-view" data-url="{{ route('developer.show',$d->id) }}">View</button>
+                            <button class="btn btn-primary btn-sm btn-edit" data-url="{{ route('developer.edit',$d->id) }}">Edit</button>
+                                
+                            <form action="{{ route('developer.destroy',$d->id) }}" method="POST" style="display: inline-block; text-align: center; vertical-align: middle;">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-danger btn-sm btn-delete" type="button" >Delete</button>
+
+                            </form>
                         </td>
                     </tr>
                 @endforeach
@@ -45,4 +54,55 @@
           </table>
     </div>
 </div>
+
+<div class="append-developer"></div>
+
+@endsection
+
+@section('script')
+<script type="text/javascript">
+    $('.btn-view').click(function(){
+        var div = $('.append-developer');
+        div.empty();
+
+        var url = $(this).data('url');
+
+        $.ajax({
+            url: url,
+            success:function(data){
+                div.append(data);
+                $('#view_developer').modal('show');
+            }
+        });
+    });
+
+    $('.btn-edit').click(function(){
+        var div = $('.append-developer');
+        div.empty();
+
+        var url = $(this).data('url');
+
+        $.ajax({
+            url: url,
+            success:function(data){
+                div.append(data);
+                $('#edit_developer').modal('show');
+            }
+        });
+    });
+
+    $('.btn-delete').click(function(e){
+			swal ({
+			    title: "Are you sure?",
+			      text: "Are you sure you want to delete this Developer?",
+			      icon: "warning",
+			      buttons: true,
+			      dangerMode: true,
+			}).then((result) => {
+				if (result) {
+					$(this).closest('form').submit();
+				}
+			})
+		});
+</script>
 @endsection

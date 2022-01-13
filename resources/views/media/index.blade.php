@@ -14,7 +14,7 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th width="15%">Image</th>
+                    <th width="30%">Image</th>
                     <th>Title</th>
                     <th>Alt Text</th>
                     <th width="10%">Action</th>
@@ -23,7 +23,9 @@
             <tbody>
                 @foreach ($media as $medias)
                 <tr>
-                    <td><img src="{{asset('storage/'.$medias->path) }}" alt="{{ $medias->alt_text }}" width="50"height="60"> </td>
+                    <td>
+                        <img src="{{asset('storage/'.$medias->path) }}" alt="{{ $medias->alt_text }}" width="100%" height="100%">
+                    </td>
                     <td>{{ $medias->title }}</td>
                     <td>{{ $medias->alt_text }}</td>
                     <td>

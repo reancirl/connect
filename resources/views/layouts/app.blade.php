@@ -79,8 +79,20 @@
                                 <li class="nav-item">
                                     <a class="nav-link nav_custom_link {{ (request()->is('developer*')) ? 'active_link' : '' }}" href="{{ route('developer.index') }}">{{ __('Developer') }}</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav_custom_link {{ (request()->is('project*')) ? 'active_link' : '' }}" href="{{ route('project.index') }}">{{ __('Projects') }}</a>
+                                <li class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle nav_custom_link {{ (request()->is('project*')) ? 'active_link' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        {{ __('Projects') }}
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('project.index') }}">
+                                            {{ __('All Projects') }}
+                                        </a>
+
+                                        <a class="dropdown-item" href="{{ route('project.import_view') }}">
+                                            {{ __('Import Projects') }}
+                                        </a>
+                                    </div>
                                 </li>
                             </ul>
                         </ul>
@@ -144,7 +156,6 @@
         });
     </script>
 
-    
 
     @yield('script')
     <script type="text/javascript">      
@@ -207,5 +218,6 @@
           $(this).closest('form').submit();
         })
       </script>
+
 </body>
 </html>

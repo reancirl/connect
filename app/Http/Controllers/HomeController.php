@@ -30,6 +30,18 @@ class HomeController extends Controller
     {
         return view('frontend.thankyou');
     }
+     public function rres()
+    {
+        return view('frontend.rres');
+    }
+     public function itbw()
+    {
+        return view('frontend.itbw');
+    }
+     public function if()
+    {
+        return view('frontend.if');
+    }
 
     public function join_our_inner_circle()
     {
