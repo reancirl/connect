@@ -144,7 +144,6 @@
         });
     </script>
 
-    
 
     @yield('script')
     <script type="text/javascript">      
@@ -207,5 +206,9 @@
           $(this).closest('form').submit();
         })
       </script>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 158ab3ba3d59e254e5fc742279ffdcacd56ab263
 </body>
 </html>

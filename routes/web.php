@@ -19,6 +19,13 @@ Auth::routes(['register' => false]);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/our-story', [HomeController::class, 'ourstory']);
+Route::get('/thank-you', [HomeController::class, 'thankyou'])->name('thankyou');
+
+Route::get('/resale-real-estate-services', [HomeController::class, 'rres'])->name('rres');
+
+
+Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');
+
 Route::middleware(['auth'])->group(function () {
     Route::resource('post', PostController::class);
     Route::resource('category', PostCategoryController::class);
@@ -30,3 +37,4 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('menu', MenuController::class);
    
 });
+
