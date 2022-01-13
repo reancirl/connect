@@ -16,7 +16,7 @@
                     <input type="text" class="form-control bg-white" value="{{ $data->title }}">
                 </div>
                 <div class="col">
-                    <h6>Slug</h6>
+                    <h6>Slug/Name</h6>
                     <input type="text" class="form-control bg-white" value="{{ $data->name }}">
                 </div>
             </div>

@@ -1,8 +1,24 @@
+
+   
 @extends('layouts.frontend')
 
 @section('content')
      <div class="container-fluid" style="height: 300px;">
         <div class="row justify-content-center">
+            <div class="col-md-5" style="margin-top:4%;">
+                <h1 style="color: #403254;font-weight: 800;font-size: 4rem;">
+                    Buying and Selling
+                    <br> 
+                    is at Our Core
+                </h1>
+                <p style="color:#000; font-size:1.3rem;" class="lead">Despite our end-to-end suite of 
+                    <u style="color: #1e73be">
+                        investment services
+                    </u>
+                    , Connect.ca hasn’t lost 
+                    touch with the core functions every real estate brokerage is built on – buying 
+                    and selling property.</p>
+            </div>
 
             <div class="col-md-5">
                 <h1 style="color: #403254;font-weight: bold;font-size: 55px;">Buying and Selling is at Our Core</h1>

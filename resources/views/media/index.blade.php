@@ -14,7 +14,7 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th width="40%">Image</th>
+                    <th width="30%">Image</th>
                     <th>Title</th>
                     <th>Alt Text</th>
                     <th width="10%">Action</th>

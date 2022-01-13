@@ -61,7 +61,7 @@ button.margin-right {
                         </div>
                 </div>
             </section>
-
+<div style="background-color: #f7f8f9;">
             <section class=" unpad--bottom">
                 <div class="container" align="center">
                     <div class="col-md-8">
@@ -110,7 +110,7 @@ button.margin-right {
                             <div  class="col-md-6 " > <img alt="Image"  style="width: 596px; height: 418px;" src="uploads/4-NetworkIllusration.png"> </div>
                         </div>
                     </div>
-                    
+</div>               
     
                     <div class="container" align="center" style="margin-top: 100px;">
                         <div class="col-md-8">
@@ -121,30 +121,115 @@ button.margin-right {
                                 </p>
                             </div>
                         </div>
-    
-                        <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="feature">
-                                    <p style="float:right; color: #3A3594; "> Ryan Coyle and Matt Elkind meet for the first time</p>
-                                    <u style="float: right;"> Read More ></u>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="feature">
-                                    <h4>Save Development Time</h4>
-                                    <p> Drastically reduce the time it takes to move from initial concept to production-ready with Stack and Variant Page Builder. Your clients will love you for it! </p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="feature">
-                         
-                                </div>
-                            </div>
-                        </div>
                     </div>
             </section>
-            
+            <section>
+                <div class="row text-center md-0 pd-0">
+                    <div class="col-sm-5">
+                        <p class="text-right mb-0 pb-0" style="color:#3a3594;font-size:20px;line-weight:25px;font-weight:700;">Ryan Coyle and Matt Elkind<br>
+                            meet for the first time</p>
+                        <p class="mt-0 pt-0" align="right" style="text-decoration: underline;color:#3a3594;">Read More >></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <span style="border-radius:50%;display:inline-block;width:100px;height:100px;background-color:#636265;color:#ffffff;text-align:center;">
+                        <p style="margin-top: 35%;">20XX</p>
+                        </span>
+                    </div>
+                    <div class="col-sm-5">
+                    </div>
+                </div>
+                <div class="row text-center mt-0 pt-4">
+                    <div class="col-sm-5">
+                    </div>
+                    <div class="col-sm-2">
+                        <span style="border-radius:50%;display:inline-block;width:100px;height:100px;background-color:#636265;color:#ffffff;text-align:center;">
+                        <p style="margin-top: 35%;">20XX</p>
+                        </span>
+                    </div>
+                    <div class="col-sm-5">
+                       <p class="text-left" style="color:#3a3594;font-size:20px;line-weight:25px;font-weight:700;"> Lisa Andrews joins the team.</p>
+                    </div>
+                </div>
+                <div class="row text-center mt-0 pt-4">
+                    <div class="col-sm-5">
+                        <p class="text-right mb-0 pb-0" style="color:#3a3594;font-size:20px;line-weight:25px;font-weight:700;">Connect.ca is founded</p>
+                        <p class="mt-0 pt-0" align="right" style="text-decoration: underline;color:#3a3594;">Read More >></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <span style="border-radius:50%;display:inline-block;width:130px;height:130px;background-color:#636265;color:#ffffff;text-align:center;">
+                        <p style="margin-top: 40%;">20XX</p>
+                        </span>
+                    </div>
+                    <div class="col-sm-5">
+                    </div>
+                </div>
+                <div class="row text-center mt-0 pt-4">
+                    <div class="col-sm-5">
+                    </div>
+                    <div class="col-sm-2">
+                        <span style="border-radius:50%;display:inline-block;width:100px;height:100px;background-color:#636265;color:#ffffff;text-align:center;">
+                        <p style="margin-top: 35%;">20XX</p>
+                        </span>
+                    </div>
+                    <div class="col-sm-3">
+                        <p class="text-left mb-0 pb-0" style="color:#3a3594;font-size:20px;line-weight:25px;font-weight:700;">Connect.ca Realty launches</p>
+                        <p class="mt-0 pt-0" align="right" style="text-decoration: underline;color:#3a3594;">Read More >></p>
+                    </div>
+                    <div class="col-sm-2">
+                       <p>Jump to <br>Year</p>
+                       <a>20XX</a><br>
+                       <a>20XX</a><br>
+                       <a>20XX</a><br>
+                       <a>2019</a>
+                    </div>
+                </div>
+                <div class="row text-center" style="margin-top: -4%;">
+                    <div class="col-sm-5">
+                        <p class="text-right mb-0 pb-0" style="color:#3a3594;font-size:20px;line-weight:25px;font-weight:700;">The Inner Circle launches</p>
+                        <p class="mt-0 pt-0" align="right" style="text-decoration: underline;color:#3a3594;">Read More >></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <span style="border-radius:50%;display:inline-block;width:100px;height:100px;background-color:#636265;color:#ffffff;text-align:center;">
+                        <p style="margin-top: 35%;">20XX</p>
+                        </span>
+                    </div>
+                    <div class="col-sm-3">  
+                    </div>
+                </div>
+                <div class="row text-center" style="margin-top: 2%;">
+                    <div class="col-sm-5">
+                       
+                    </div>
+                    <div class="col-sm-2">
+                        <span style="border-radius:50%;display:inline-block;width:100px;height:100px;background-color:#636265;color:#ffffff;text-align:center;">
+                        <p style="margin-top: 35%;">20XX</p>
+                        </span>
+                    </div>
+                    <div class="col-sm-3">
+                        <p class="text-left mb-0 pb-0" style="color:#3a3594;font-size:20px;line-weight:25px;font-weight:700;">Connect.ca launches our
+                            in-house private mortgage
+                            lending company,
+                            OneDayMoney</p>
+                        <p class="mt-0 pt-0" align="right" style="text-decoration: underline;color:#3a3594;">Read More >></p> 
+                    </div>
+                </div>
+                <div class="row text-center" style="margin-top: 2%;">
+                    <div class="col-sm-5">
+                        <p class="text-right mb-0 pb-0" style="color:#3a3594;font-size:20px;line-weight:25px;font-weight:700;">Connect.ca acquires<br>
+                            property management<br>
+                            company Marco Toronto</p>
+                        <p class="mt-0 pt-0" align="right" style="text-decoration: underline;color:#3a3594;">Read More >></p> 
+                    </div>
+                    <div class="col-sm-2">
+                        <span style="border-radius:50%;display:inline-block;width:100px;height:100px;background-color:#636265;color:#ffffff;text-align:center;">
+                        <p style="margin-top: 35%;">20XX</p>
+                        </span>
+                    </div>
+                    <div class="col-sm-3">
+                        
+                    </div>
+                </div>
+            </section>
             <section class="unpad">
             
                     <div class="imagebg text-center height-70" style=" background: linear-gradient(rgba(58, 53, 148, 0.8), rgba(58, 53, 148, 0.8)), url('{{ asset('uploads/CTAPanel.png') }}');; background-repeat: no-repeat; background-size: cover;">

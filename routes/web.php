@@ -20,9 +20,11 @@ Auth::routes(['register' => false]);
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/our-story', [HomeController::class, 'ourstory']);
 Route::get('/thank-you', [HomeController::class, 'thankyou'])->name('thankyou');
+Route::get('/join-our-inner-circle', [HomeController::class, 'join_our_inner_circle'])->name('join_our_inner_circle');
 
 Route::get('/resale-real-estate-services', [HomeController::class, 'rres'])->name('rres');
-
+Route::get('/investment-to-build-wealth', [HomeController::class, 'itbw'])->name('itbw');
+Route::get('/investors-faq', [HomeController::class, 'if'])->name('if');
 
 Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');
 
@@ -35,6 +37,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('media', MediaController::class);
     Route::resource('page', PagesController::class);
     Route::resource('menu', MenuController::class);
-   
+
+    Route::get('import/projects', [ProjectController::class, 'import_view'])->name('project.import_view');
+    Route::post('import/projects', [ProjectController::class, 'import'])->name('project.import');
 });
 
