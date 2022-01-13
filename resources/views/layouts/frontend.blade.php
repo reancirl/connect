@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ asset('css/frontend.css') }}">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
     </head>
     <body data-smooth-scroll-offset="77">
         <div class="nav-container" style="margin-bottom:3rem;padding-top:2rem;">
@@ -69,7 +69,7 @@
         </div>
 
         <footer class="row mt-0 pt-0 mb-0 pb-0">
-            <div class="col-sm-7 text-center" style="background-color:#564e62;height:70vh;">
+            <div class="col-sm-7 text-center" style="background-color:#564e62;height:60vh;">
                 <div class="row" style="margin-top:10%;">
                     <div class="col-sm-5 text-left" style="padding-left:17%;">
                         <h2 style="color: #FFDE59;font-size: 35px; font-weight: 700;" class="mb-3 pb-0">Let's Talk</h2>
@@ -93,8 +93,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5 text-left p-5" style="background-color:#403254;height:70vh;">
-                <img src="{{ asset('img/connect_logo_light.png') }}" alt="logo_light" width="70%">
+            <div class="col-sm-5 text-left pt-5 pb-5 pl-5" style="background-color:#403254;height:60vh;">
+                <img src="{{ asset('img/connect_logo_light.png') }}" alt="logo_light" width="60%">
                 <div class="p-2" style="color:#fff;">
                     <h4 style="color: #FFFFFF;font-size: 1.3rem;font-weight: 400;" class="mb-3 pb-0">Contact Us</h4>
                     <p class="pb-0 mb-0" style="font-size:.8rem">Direct: <a href="tel:4168009272" style="color:#79c9d1;">416.800.9272</a></p>
@@ -133,8 +133,7 @@
         <script src="{{ asset('stack/js/countdown.min.js') }}"></script>
         <script src="{{ asset('stack/js/smooth-scroll.min.js') }}"></script>
         <script src="{{ asset('stack/js/scripts.js') }}"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
     </body>
 
 </html>

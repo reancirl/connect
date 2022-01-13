@@ -20,6 +20,7 @@ Auth::routes(['register' => false]);
 Route::get('/thank-you', [HomeController::class, 'thankyou'])->name('thankyou');
 
 Route::get('/resale-real-estate-services', [HomeController::class, 'rres'])->name('rres');
+Route::get('/investment-to-build-wealth', [HomeController::class, 'itbw'])->name('itbw');
 
 
 Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');

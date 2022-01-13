@@ -1,15 +1,29 @@
+
+   
 @extends('layouts.frontend')
 
 @section('content')
-     <div class="container-fluid" style="height: 300px;">
+    <div class="container-fluid" style="height: 300px;">
         <div class="row justify-content-center">
-
-            <div class="col-md-5">
-                <h1 style="color: #403254;font-weight: bold;font-size: 55px;">Buying and Selling is at Our Core</h1>
-                <p >Despite our end-to-end suite of <u style="color: #1e73be">investment services</u>, Connect.ca hasn’t lost touch with the core functions every real estate brokerage is built on – buying and selling property.</p>
+            <div class="col-md-5" style="margin-top:4%;">
+                <h1 style="color: #403254;font-weight: 800;font-size: 4rem;">
+                    Buying and Selling
+                    <br> 
+                    is at Our Core
+                </h1>
+                <p style="color:#000; font-size:1.3rem;" class="lead">Despite our end-to-end suite of 
+                    <u style="color: #1e73be">
+                        investment services
+                    </u>
+                    , Connect.ca hasn’t lost 
+                    <br> 
+                    touch with the core functions every real estate brokerage is built on – buying 
+                    <br>                    
+                    and selling property.</p>
             </div>
-            <div class="">
-                <img alt="image" src="img/rres.png" id="rres_png">
+
+            <div>
+                <img alt="image" src="{{ asset('img/rres.png') }}" id="rres_png">
                 <style type="text/css">
                     @media (max-width:629px) {
                         img#rres_png {
@@ -22,46 +36,49 @@
         </div>
     </div>
     <br><br><br><br>
-    <div style="background-color: #f7f8f9;">
+    <div style="background-color: #f1f2f9;">
     <br>
-    <div class="d-flex justify-content-center">
+    <div class="container mb-4">
+        <div align="center">
            <div class="text-block"></div>
-            <div class="col-lg-5" >
+            <div class="col-lg-7">
                 <div class="text-block">
-                    <h5 style="text-align: center;font-size: 25px;font-weight: bold;">With the addition of Lisa Andrews, a storied resale real estate professional with decades of experience in building and leading teams of top-class real estate brokers to numerous awards and achievements, Connect.ca also knows how to help clients buy and sell single properties better than the competition.</h5>
-                   
+                    <p style="color:#000; font-size:1.3rem;" class="lead text-center">With the addition of Lisa Andrews, a storied resale real estate professional with decades of experience in building and leading
+                         teams of top-class real estate brokers to numerous awards and achievements, Connect.ca also knows how to help clients buy and sell single properties better 
+                         than the competition.</p>
                 </div>
-                <div class="text-block" align="center">
-                   <button class="btn_connect_button mt-3" style="width: 270px;height: 45px;font-size: 16px;">What Your Home Worth?</button>
-                   <button class="btn_connect_button mt-3" style="width: 270px;height: 45px;font-size: 16px;">Connect with a Buyer's Agent</button>
-                </div>
+                <a class="btn_connect_button mr-5">What Your Home Worth?</a>
+                <a class="btn_connect_button">Connect with a Buyer's Agent</a>
             </div>
+        </div>
     </div>
     
     <br>
-     <div class="container">
+    <div class="container">
         <div class="row justify-content-around">
-             <div class="col-md-6"> <img alt="Image" src="img/2-Exterior.jpg" style="width: 1100px;"> </div>
+             <div class="col-md-6"> <img alt="Image" src="{{ asset('img/2-Exterior.jpg') }}" style="width: 1100px;"> </div>
             <div class="col-md-6">
                 <div class="switchable__text">
 
                     <div class="text-block"></div><div class="text-block"></div>
                     <h2 style="color: #403254;font-size: 25px;font-weight: bold;font-family: Ropa Sans, Sans-serif;">The Resale Experience</h2>
-                    <p class="lead" style="font-size: 17px;"> While we believe that every property owner already has the potential to become a successful investor, we know that many transactions with our clientele will solely be a one-time purchase or sale. </p>
-                    <a role="button" data-toggle="collapse" data-target="#tremore" style="color: #3A3594;float: right;text-decoration: underline;">Read More »</a> 
+                    <p class="lead" style="font-size: 1.2rem;color:#000;"> While we believe that every property owner already has the potential to become a successful investor, we know that many transactions with our clientele will solely be a one-time purchase or sale. </p> 
+                    <div class="float-right">
+                        <ul class="accordion accordion-2">
+                            <li class="">
+                                <div class="accordion__title" style="opacity:1;"> 
+                                    <span class="h5 float-right" style="color:#3A3594;text-decoration:underline;">Read More ></span>
+                                 </div>
+                                <div class="accordion__content">
+                                    <p class="lead" style="color:#000;font-size:1.2rem;"> Stack follows the BEM naming convention that focusses on logical code readability that is reflected in both the HTML and CSS.
+                                         Interactive elements such as accordions and tabs follow the same markup patterns making rapid development easier for developers and beginners
+                                          alike. </p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                
-                    <div id="tremore" class="collapse lead" style="font-size: 17px;"><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin at neque vel iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc nisi metus, dignissim non aliquam nec, sollicitudin in mauris. Fusce id tellus in tellus accumsan aliquet. Aliquam erat volutpat. Suspendisse potenti. Nunc sed tellus fringilla, bibendum justo at, porttitor arcu. Vestibulum a interdum nibh. Quisque mi lorem, tempus id ex in, commodo mattis justo. Ut a vestibulum lorem. Nullam quis diam risus. Aenean sollicitudin sapien mi, eget auctor turpis faucibus sit amet. Suspendisse quis dictum metus.<br><br><br>
-
-                    Aliquam erat volutpat. Etiam dolor sem, egestas ut vulputate non, feugiat in ligula. Suspendisse lacinia tincidunt purus, a pellentesque mauris molestie eu. Cras condimentum suscipit orci, at sollicitudin enim malesuada at. Vestibulum vitae metus convallis, tempus lectus et, varius risus. Sed nulla magna, convallis pretium ante a, efficitur tempus tortor. Sed laoreet pellentesque luctus. Pellentesque justo metus, rutrum ut rutrum nec, cursus in ligula. Morbi blandit sapien urna, a suscipit diam euismod non. Nunc sed est auctor, luctus justo at, ornare nisl. Nam mauris orci, efficitur quis arcu eu, lobortis tristique diam. Proin ipsum dui, hendrerit eget urna id, scelerisque volutpat enim. Nam eget suscipit orci. Maecenas volutpat, erat ac placerat mattis, nulla ligula semper tellus, a consectetur elit magna quis tellus. Duis in tempus leo.<br><br><br>
-
-                    Phasellus convallis tincidunt aliquet. Quisque porttitor sed dui viverra mattis. Pellentesque consectetur sed est nec porta. Mauris ac tortor et nunc finibus laoreet ut vel orci. Pellentesque sed nibh id libero rhoncus euismod nec in enim. Maecenas efficitur convallis fringilla. Integer vel ullamcorper massa. Sed accumsan aliquam purus tincidunt ullamcorper.<br><br><br>
-
-                    Duis vel tortor erat. Phasellus eu molestie lectus, at interdum elit. Aenean rutrum diam purus, vel rutrum neque fermentum id. Suspendisse consectetur feugiat nunc. Pellentesque a mauris feugiat, gravida diam ac, dapibus sem. Quisque ullamcorper risus vel interdum faucibus. In dictum nulla et nunc aliquet sodales. Fusce erat massa, dignissim ac nisi vitae, vestibulum bibendum nibh. Vivamus at ex quis ligula hendrerit pellentesque quis eget leo. Pellentesque at elit non augue ullamcorper consequat.<br><br><br>
-
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam accumsan ullamcorper massa, eu placerat sem maximus eu. Quisque malesuada sagittis turpis, ut congue ligula pharetra vitae. In tristique id justo a efficitur. Fusce nunc leo, facilisis eget lacus at, mollis lacinia nulla. Mauris sagittis tincidunt justo vel aliquam. Nam eu consectetur eros. Donec ut sollicitudin augue. Etiam sed bibendum neque. Nam sit amet sagittis sapien, convallis dapibus leo. Etiam sit amet tortor nisi. Maecenas quam sem, convallis sit amet tellus sit amet, tempus egestas diam.</div>
+                </div>
             </div>
-           
         </div>
     </div>
     <br><br><br>
@@ -71,38 +88,52 @@
                 <div class="switchable__text">
                     <div class="text-block"></div><div class="text-block"></div>
                     <h2 style="color: #403254;font-size: 25px;font-weight: bold;font-family: Ropa Sans, Sans-serif;">Home Advantage</h2>
-                    <p class="lead" style="font-size: 17px;"> Our customer service second-to-none in the industry. Along with access to our in-house real estate brokerage, Connect.ca Realty, we also utilize the services of in-house team of VIP Platinum Realtors, as well as our in-house Resale network, and our OneDayAssignments and OneDayPurchase programs – all to our clients’ full advantage. </p>
-                     <a role="button" data-toggle="collapse" data-target="#hamore" style="color: #3A3594;float: right;text-decoration: underline;">Read More »</a> </div>
-                    <div id="hamore" class="collapse lead" style="font-size: 17px;"><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin at neque vel iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc nisi metus, dignissim non aliquam nec, sollicitudin in mauris. Fusce id tellus in tellus accumsan aliquet. Aliquam erat volutpat. Suspendisse potenti. Nunc sed tellus fringilla, bibendum justo at, porttitor arcu. Vestibulum a interdum nibh. Quisque mi lorem, tempus id ex in, commodo mattis justo. Ut a vestibulum lorem. Nullam quis diam risus. Aenean sollicitudin sapien mi, eget auctor turpis faucibus sit amet. Suspendisse quis dictum metus.<br><br><br>
-
-                    Aliquam erat volutpat. Etiam dolor sem, egestas ut vulputate non, feugiat in ligula. Suspendisse lacinia tincidunt purus, a pellentesque mauris molestie eu. Cras condimentum suscipit orci, at sollicitudin enim malesuada at. Vestibulum vitae metus convallis, tempus lectus et, varius risus. Sed nulla magna, convallis pretium ante a, efficitur tempus tortor. Sed laoreet pellentesque luctus. Pellentesque justo metus, rutrum ut rutrum nec, cursus in ligula. Morbi blandit sapien urna, a suscipit diam euismod non. Nunc sed est auctor, luctus justo at, ornare nisl. Nam mauris orci, efficitur quis arcu eu, lobortis tristique diam. Proin ipsum dui, hendrerit eget urna id, scelerisque volutpat enim. Nam eget suscipit orci. Maecenas volutpat, erat ac placerat mattis, nulla ligula semper tellus, a consectetur elit magna quis tellus. Duis in tempus leo.<br><br><br>
-
-                    Phasellus convallis tincidunt aliquet. Quisque porttitor sed dui viverra mattis. Pellentesque consectetur sed est nec porta. Mauris ac tortor et nunc finibus laoreet ut vel orci. Pellentesque sed nibh id libero rhoncus euismod nec in enim. Maecenas efficitur convallis fringilla. Integer vel ullamcorper massa. Sed accumsan aliquam purus tincidunt ullamcorper.<br><br><br>
-
-                    Duis vel tortor erat. Phasellus eu molestie lectus, at interdum elit. Aenean rutrum diam purus, vel rutrum neque fermentum id. Suspendisse consectetur feugiat nunc. Pellentesque a mauris feugiat, gravida diam ac, dapibus sem. Quisque ullamcorper risus vel interdum faucibus. In dictum nulla et nunc aliquet sodales. Fusce erat massa, dignissim ac nisi vitae, vestibulum bibendum nibh. Vivamus at ex quis ligula hendrerit pellentesque quis eget leo. Pellentesque at elit non augue ullamcorper consequat.<br><br><br>
-
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam accumsan ullamcorper massa, eu placerat sem maximus eu. Quisque malesuada sagittis turpis, ut congue ligula pharetra vitae. In tristique id justo a efficitur. Fusce nunc leo, facilisis eget lacus at, mollis lacinia nulla. Mauris sagittis tincidunt justo vel aliquam. Nam eu consectetur eros. Donec ut sollicitudin augue. Etiam sed bibendum neque. Nam sit amet sagittis sapien, convallis dapibus leo. Etiam sit amet tortor nisi. Maecenas quam sem, convallis sit amet tellus sit amet, tempus egestas diam.</div>
+                    <p class="lead" style="font-size: 1.2rem;color:#000;"> WOur customer service second-to-none in the industry. Along with access to our in-house real estate brokerage, Connect.ca Realty, we also utilize the services of in-house team of VIP Platinum Realtors, as well as our in-house Resale network, and our OneDayAssignments and OneDayPurchase programs – all to our clients’ full advantage. </p> 
+                    <div class="float-right">
+                        <ul class="accordion accordion-2">
+                            <li class="">
+                                <div class="accordion__title" style="opacity:1;"> 
+                                    <span class="h5 float-right" style="color:#3A3594;text-decoration:underline;">Read More ></span>
+                                 </div>
+                                <div class="accordion__content">
+                                    <p class="lead" style="color:#000;font-size:1.2rem;"> Stack follows the BEM naming convention that focusses on logical code readability that is reflected in both the HTML and CSS.
+                                         Interactive elements such as accordions and tabs follow the same markup patterns making rapid development easier for developers and beginners
+                                          alike. </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6"> <img alt="Image" src="img/3-InteriorPlaceHolder.jpg" style="width: 1100px;"> </div>
+            <div class="col-md-6"> <img alt="Image" src="{{ asset('img/3-InteriorPlaceHolder.jpg') }}" style="width: 1100px;"> </div>
         </div>
     </div>
     <br><br>
-    <section style="background-color:#3A3594;width: 100%;height: 477px;opacity: 1;">
-        <div class="container">
-            <div style="text-align: center;">
-                <h1 style="color: #FFDE59;font-size: 35px;font-weight: 600;font-family: Roboto, Sans-serif;">Sell with Us Today</h1>
-                <p class="lead" style="color: #FFDE59;font-size: 22px;font-weight: 700;font-family: Ropa Sans, Sans-serif;"> Selling with Connect.ca is the easiest, most integrated<br>selling experience on the market. To sell with the best,<br>click below. </p>
-                <button type="submit" class="btn_connect_button mt-3" style="width: 200px;font-size: 14px;">Get Selling</button>
-                
+    <section class="unpad pb-0 mb-0">
+        <div class="imagebg text-center height-50" style=" background: linear-gradient(rgba(58, 53, 148, 0.8), rgba(58, 53, 148, 0.8)), url('{{ asset('uploads/CTAPanel.png') }}');; background-repeat: no-repeat; background-size: cover;">
+            <div class="background-image-holder"> </div>
+            <div class="container pos-vertical-center">
+                <div class="row" >
+                    <div class="col-md-12">
+                        <div class="article__title">
+                            <h1 style="font-family:Roboto, Sans-serif; color: #FFDE59; font-size: 50px; font-weight:800;">
+                                Sell with Us Today
+                            </h1>
+                            <p style="text-align: center; color: #FFDE59; font-family: Ropa Sans, Sans-serif; font-size: 22px; font-weight: 700;">
+                                Selling with Connect.ca is the easiest, most integrated
+                                <br>
+                                selling experience on the market. To sell with the best,
+                                <br>
+                                click below.
+                            </p>
+
+                            <a class="btn_connect_button" style="padding-left:2rem !important;padding-right:2rem !important;">Get Selling</a>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     </div>
 @endsection
-@section('script')
-<script>
-    $(document).ready(function(){$("tremore").click(function(){$("#div").toggle();});});
-    $(document).ready(function(){$("hamore").click(function(){$("#div").toggle();});});
-</script>
-@endsection               
-

@@ -44,7 +44,7 @@
                             <form action="{{ route('developer.destroy',$d->id) }}" method="POST" style="display: inline-block; text-align: center; vertical-align: middle;">
                                 @csrf
                                 @method('DELETE')
-                                <button class="btn btn-danger btn-sm btn-delete" >Delete</button>
+                                <button class="btn btn-danger btn-sm btn-delete" type="button" >Delete</button>
 
                             </form>
                         </td>

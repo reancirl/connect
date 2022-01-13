@@ -8,7 +8,7 @@
         <div class="container pos-vertical-center" style="margin-left:3rem !important;">
             <div class="row">
                 <div class="col-lg-5 col-md-7">
-                    <h1 style="font-weight:900; color:#403254; font-family:Roboto; font-size: 3.8rem;">
+                    <h1 style="font-weight:900; color:#403254; font-size: 3.8rem;">
                         Your Full-Service
                         <br>
                         Real Estate
@@ -19,15 +19,15 @@
                         or invest, we cover the entire real estate journey
                         to meet all of your needs.
                     </p>
-                    <button class="btn_connect_button mr-4">Selling & Buying</button>
-                    <button class="btn_connect_button">Investment Services</button>
+                    <a class="btn_connect_button mr-4">Selling & Buying</a>
+                    <a class="btn_connect_button">Investment Services</a>
                 </div>
             </div>
         </div>
     </section>
     <section class="row mt-0 pt-0">
         <div class="col-lg-6 col-md-4 text-center" style="background-color:#3A3594;height:100vh;">
-            <h2 style="font-weight:900; color:#fff; font-family:Roboto; font-size: 3rem;margin-top:40%;" >
+            <h2 style="font-weight:900; color:#fff; font-size: 3rem;margin-top:40%;" >
                 Our Featured Listings
             </h2>
             <p style="color:#fff; font-weight:400; font-size:18px;">
@@ -35,8 +35,8 @@
                 <br> 
                 best resale and investment opportunities available.
             </p>
-            <button class="btn_connect_button mr-4">Our Listings</button>
-            <button class="btn_connect_button">Start Buying</button>
+            <a class="btn_connect_button mr-4">Our Listings</a>
+            <a class="btn_connect_button">Start Buying</a>
         </div>
         <div class="col">
         
@@ -47,7 +47,7 @@
             <div class="row mb-5">
                 <div class="col-md-8 col-lg-6">
                     <div class="cta">
-                        <h2 style="color:#403254;font-family:Roboto;font-weight:700;">Start Your Search</h2>
+                        <h2 style="color:#403254font-weight:700;">Start Your Search</h2>
                         <p style="color:#000; font-weight:400; font-size:18px;">
                             Browse our selection of listings according to your needs to
                             find properties that match your criteria.
@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex">
+            <div class="d-flex mb-4">
                 <input type="text" class="rounded-0 search_input search_fields thin_border_right flex-grow-1" placeholder="Enter a city, town neighbourhood or address">
 
                 <select name="" id="" style="border-radius:0px !important;text-align:center;" class="search_fields thin_border_right">
@@ -74,7 +74,7 @@
                     <option disabled selected>Baths</option>
                 </select>
             </div>
-            <button class="btn_connect_button mt-4" style="font-weight:500;">Find Listings</button>
+            <a class="btn_connect_button" style="font-weight:500;">Find Listings</a>
             <p style="color:#000; font-weight:300; font-size:16px;margin-top:2rem;margin-bottom:0px;padding-bottom:0px;">
                 Or search active listings for sale by:
             </p> 
@@ -93,7 +93,7 @@
             <div class="row mb-5">
                 <div class="col-md-12 col-lg-12">
                     <div class="cta">
-                        <h2 style="color:#403254;font-family:Roboto;font-weight:900;font-size:3rem;" class="mb-0 pb-0">Pre-Construction Developments</h2>
+                        <h2 style="color:#403254font-weight:900;font-size:3rem;" class="mb-0 pb-0">Pre-Construction Developments</h2>
                         <p style="color:#000; font-weight:400; font-size:16px;" class="mt-0 pt-0">
                             Ready to enjoy the unique advantages of pre-construction investing? View some
                             <br>
@@ -119,7 +119,7 @@
                                                 Etiam eu venenatis magna, ac fermentum est. Vestibulum sit amet posuere ipsum. Nullam neque risus, dapibus sit amet 
                                                 ullamcorper ut, pellentesque eu massa. Cras maximus mauris eget justo convallis…					
                                             </p>  
-                                            <button class="btn_connect_button mr-4 float-right">Read more</button>
+                                            <a class="btn_connect_button mr-4 float-right">Read more</a>
                                         </div>
                                         <div class="col">
                                             <img alt="Image" src="{{ asset('stack/img/work-1.jpg') }}"> 
@@ -138,7 +138,7 @@
                                                 Etiam eu venenatis magna, ac fermentum est. Vestibulum sit amet posuere ipsum. Nullam neque risus, dapibus sit amet 
                                                 ullamcorper ut, pellentesque eu massa. Cras maximus mauris eget justo convallis…					
                                             </p>  
-                                            <button class="btn_connect_button mr-4 float-right">Read more</button>
+                                            <a class="btn_connect_button mr-4 float-right">Read more</a>
                                         </div>
                                         <div class="col">
                                             <img alt="Image" src="{{ asset('stack/img/work-2.jpg') }}">
@@ -204,8 +204,8 @@
                 </div>
             </div>
             <div class="text-center pt-4">
-                <button class="btn_connect_button mr-4">View Developments</button>
-                <button class="btn_connect_button">ROI Calculator</button>
+                <a class="btn_connect_button mr-4">View Developments</a>
+                <a class="btn_connect_button">ROI Calculator</a>
             </div>
         </div>
     </section>
@@ -218,7 +218,7 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-5 col-lg-5 text-center">
                     <div class="switchable__text">
-                        <h2 style="color:#403254;font-family:Roboto;font-weight:900;font-size:3.4rem;padding-bottom:0px;margin-bottom:0px;padding-top:5rem;">Our Resources</h2>
+                        <h2 style="color:#403254font-weight:900;font-size:3.4rem;padding-bottom:0px;margin-bottom:0px;padding-top:5rem;">Our Resources</h2>
                         <p style="color:#000; font-weight:400; font-size:16px;" class="mt-0 pt-0">
                             Learn more about real estate investing, what 
                             <br>
@@ -226,8 +226,8 @@
                             <br>
                             we’ve helped clients achieve.
                         </p>
-                        <button class="btn_connect_button">Our FAQs</button>
-                        <button class="btn_connect_button">Case Studies</button>
+                        <a class="btn_connect_button">Our FAQs</a>
+                        <a class="btn_connect_button">Case Studies</a>
                     </div>
                 </div>
             </div>
@@ -238,15 +238,15 @@
             <div class="row mb-5">
                 <div class="col-md-5 col-lg-5">
                     <div class="cta">
-                        <h2 style="color:#403254;font-family:Roboto;font-weight:900;font-size:3rem;" class="">
+                        <h2 style="color:#403254font-weight:900;font-size:3rem;" class="">
                             Investing In Success
                         </h2>
                         <p style="color:#000; font-weight:400; font-size:16px;" class="mb-5">
                             Our personal real estate portfolios are a testament to our expertise. Find out more about our full-circle investment process—and start securing your future.
                         </p>                                
                     </div>
-                    <button class="btn_connect_button">Our FAQs</button>
-                    <button class="btn_connect_button">Case Studies</button>
+                    <a class="btn_connect_button">Our FAQs</a>
+                    <a class="btn_connect_button">Case Studies</a>
                 </div>
             </div>
         </div>
@@ -256,7 +256,7 @@
         
         </div>
         <div class="col-lg-6 col-md-4 text-center" style="background-color:#403254;height:100vh;">
-            <h2 style="font-weight:900; color:#fff; font-family:Roboto; font-size: 3rem;margin-top:40%;" >
+            <h2 style="font-weight:900; color:#fff; font-size: 3rem;margin-top:40%;" >
                 The Connect Blog
             </h2>
             <p style="color:#fff; font-weight:400; font-size:18px;">
@@ -266,12 +266,12 @@
                 <br>
                 and much more.
             </p>
-            <button class="btn_connect_button mr-4">Read Posts</button>
+            <a class="btn_connect_button mr-4">Read Posts</a>
         </div>
     </section>
     <section class="row mt-0 pt-0 mb-0 pb-0">
         <div class="col-lg-6 col-md-4 text-center" style="background-color:#3A3594;height:100vh;">
-            <h2 style="font-weight:900; color:#fff; font-family:Roboto; font-size: 3rem;margin-top:40%;" >
+            <h2 style="font-weight:900; color:#fff; font-size: 3rem;margin-top:40%;" >
                 About Connect
             </h2>
             <p style="color:#fff; font-weight:400; font-size:18px;">
@@ -281,8 +281,8 @@
                 <br>
                 service real estate providers.
             </p>
-            <button class="btn_connect_button mr-4">Read Our Story</button>
-            <button class="btn_connect_button">Meet The Team</button>
+            <a class="btn_connect_button mr-4">Read Our Story</a>
+            <a class="btn_connect_button">Meet The Team</a>
         </div>
         <div class="col" style="background-image:url('{{ asset('uploads/owners.jpeg') }}'); background-size: cover;">
         

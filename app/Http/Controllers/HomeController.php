@@ -34,5 +34,9 @@ class HomeController extends Controller
     {
         return view('frontend.rres');
     }
+     public function itbw()
+    {
+        return view('frontend.itbw');
+    }
 
 }
