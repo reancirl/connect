@@ -26,6 +26,10 @@ class HomeController extends Controller
         return view('home');
     }
 
+    public function ourstory()
+    {
+        return view('frontend.ourstory');
+    }
     public function thankyou()
     {
         return view('frontend.thankyou');
@@ -46,5 +50,10 @@ class HomeController extends Controller
     public function join_our_inner_circle()
     {
         return view('frontend.join_our_inner_circle');  
+    }
+
+    public function individual_listing()
+    {
+        return view('frontend.individual_listing');  
     }
 }
