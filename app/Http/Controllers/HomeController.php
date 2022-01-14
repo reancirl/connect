@@ -56,4 +56,8 @@ class HomeController extends Controller
     {
         return view('frontend.individual_listing');  
     }
+    public function case_studies()
+    {
+        return view('frontend.case_studies');  
+    }
 }

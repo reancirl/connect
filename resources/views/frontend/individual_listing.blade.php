@@ -21,7 +21,7 @@
                                     <div class="row">
                                         <div class="col-sm-7"></div>
                                         <div class="col-sm-7 pr-1" style="padding-left: 50px;">
-                                            <button type="submit" class="btn_connect_button mt-3" style="text-align:center;">Let's Connect</button>
+                                            <button type="submit" class="individual_button mt-3" style="text-align:center;">Let's Connect</button>
                                         </div>
                                     </div>
                                 </form>
@@ -176,50 +176,6 @@
             </div>
             <div class="col-sm-4">
             </div>
-
-            {{-- <div class="col-sm-1">
-                <img alt="Image" style="max-width: 100%; height:auto;" src="{{ asset('img/img1.png') }} ">
-            </div>
-            <div class="col-sm-2">
-                <img alt="Image" style="max-width: 100%; height:auto;" src="{{ asset('img/img1.png') }} ">
-            </div>
-            <div class="col-sm-2">
-                <img alt="Image" style="max-width: 100%; height:auto;" src="{{ asset('img/img1.png') }} ">
-            </div>
-            <div class="col-sm-2">
-                <img alt="Image" style="max-width: 100%; height:auto;" src="{{ asset('img/img1.png') }} ">
-            </div>
-            <div class="col-sm-4">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-            </div>
-            <div class="col-sm-1">
-                <img alt="Image" style="max-width: 100%; height:auto;" src="{{ asset('img/img1.png') }} ">
-            </div>
-            <div class="col-sm-1">
-                <img alt="Image" style="max-width: 100%; height:auto;" src="{{ asset('img/img1.png') }} ">
-            </div>
-            <div class="col-sm-1">
-                <img alt="Image" style="max-width: 100%; height:auto;" src="{{ asset('img/img1.png') }} ">
-            </div>
-            <div class="col-sm-1">
-                <img alt="Image" style="max-width: 100%; height:auto;" src="{{ asset('img/img1.png') }} ">
-            </div>
-            <div class="col-sm-6">
-            </div>
-        </div>
-            <div class="col-sm-2">
-            </div>
-            <div class="col-sm-6">
-                <img alt="Image" style="max-width:20%; margin-bottom:0px !important;" src="{{ asset('img/img1.png') }} ">
-                <img alt="Image" style="max-width:20%; margin-bottom:0px !important;" src="{{ asset('img/img1.png') }} ">
-                <img alt="Image" style="max-width:20%; margin-bottom:0px !important;" src="{{ asset('img/img1.png') }} ">
-                <img alt="Image" style="max-width:20%; margin-bottom:0px !important;" src="{{ asset('img/img1.png') }} ">
-            </div>
-            <div class="col-sm-4">
-            </div> --}}
     </section>
 
 </div>
