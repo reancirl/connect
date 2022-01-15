@@ -135,6 +135,7 @@
 }
 
 .case_button {
+    text-decoration: none;
     font-family: "Ropa Sans", Sans-serif;
     font-weight: 600;
     fill: #3a3594;
@@ -142,13 +143,17 @@
     background-color: #79c9d1;
     border-style: solid;
     border-width: 2px 2px 2px 2px;
+    padding: 10px;
     border-color: #79c9d1;
     border-radius: 30px 30px 30px 30px;
-    font-size: 0.9rem;
+    font-size: 15px;
     cursor: pointer;
 }
 .case_button:hover {
     border-color: #79c9d1;
     background-color: transparent;
     color: #79c9d1 !important;
+}
+.case_studies_p:hover {
+    text-decoration: underline;
 }
