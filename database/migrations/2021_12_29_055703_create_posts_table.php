@@ -22,9 +22,10 @@ class CreatePostsTable extends Migration
 
             $table->string('meta_description')->nullable();
             $table->boolean('robots')->default(1);
-            
+
             $table->string('author')->nullable();
             $table->integer('created_by')->nullable();
+            $table->integer('updated_by')->nullable();
             $table->boolean('published')->default(0);
             $table->date('date_published')->nullable();
             $table->timestamps();

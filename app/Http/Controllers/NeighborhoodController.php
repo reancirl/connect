@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Neighborhood;
 use Illuminate\Http\Request;
+use Redirect;
+use Auth;
 
 class NeighborhoodController extends Controller
 {
@@ -36,7 +38,17 @@ class NeighborhoodController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $addNeighbor = new Neighborhood;
+        $addNeighbor->name = $request->name;
+        $addNeighbor->title = $request->title;
+        $addNeighbor->content = $request->content;
+        $addNeighbor->excerpt = $request->excerpt;
+        $addNeighbor->status = $request->status;
+        $addNeighbor->is_featured = $request->featured;
+        $addNeighbor->created_by = Auth::user()->id;
+        $addNeighbor->save();
+
+        return redirect()->back()->with("Neighborhood Added Successfully");
     }
 
     /**
@@ -58,7 +70,8 @@ class NeighborhoodController extends Controller
      */
     public function edit(Neighborhood $neighborhood)
     {
-        //
+        $data = $neighborhood;
+        return view('neighborhoods._editNeighborhood',compact('data'));
     }
 
     /**
@@ -70,7 +83,15 @@ class NeighborhoodController extends Controller
      */
     public function update(Request $request, Neighborhood $neighborhood)
     {
-        //
+        $neighborhood->name = $request->name;
+        $neighborhood->title = $request->title;
+        $neighborhood->content = $request->content;
+        $neighborhood->excerpt = $request->excerpt;
+        $neighborhood->status = $request->status;
+        $neighborhood->is_featured = $request->is_featured;
+        $neighborhood->update();
+
+        return Redirect::to('/neighborhood')->with('success', 'Neighborhood Updated Successfully ');
     }
 
     /**
@@ -81,6 +102,8 @@ class NeighborhoodController extends Controller
      */
     public function destroy(Neighborhood $neighborhood)
     {
-        //
+        $neighborhood->delete();
+
+        return Redirect::to('/neighborhood')->with('success', 'Successfuly Deleted');
     }
 }
