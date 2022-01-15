@@ -21,6 +21,8 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/our-story', [HomeController::class, 'ourstory']);
 Route::get('/thank-you', [HomeController::class, 'thankyou'])->name('thankyou');
 Route::get('/join-our-inner-circle', [HomeController::class, 'join_our_inner_circle'])->name('join_our_inner_circle');
+Route::get('/individual-listing', [HomeController::class, 'individual_listing'])->name('individual_listing');
+Route::get('/case-studies', [HomeController::class, 'case_studies'])->name('case_studies');
 
 Route::get('/resale-real-estate-services', [HomeController::class, 'rres'])->name('rres');
 Route::get('/investment-to-build-wealth', [HomeController::class, 'itbw'])->name('itbw');

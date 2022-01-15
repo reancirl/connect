@@ -51,4 +51,13 @@ class HomeController extends Controller
     {
         return view('frontend.join_our_inner_circle');  
     }
+
+    public function individual_listing()
+    {
+        return view('frontend.individual_listing');  
+    }
+    public function case_studies()
+    {
+        return view('frontend.case_studies');  
+    }
 }
