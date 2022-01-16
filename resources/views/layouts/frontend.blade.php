@@ -125,7 +125,7 @@
                 </div>
             </div>
         </footer>
-
+        @yield('scripts')
         <script src="{{ asset('stack/js/jquery-3.1.1.min.js') }}"></script>
         <script src="{{ asset('stack/js/flickity.min.js') }}"></script>
         <script src="{{ asset('stack/js/parallax.js') }}"></script>

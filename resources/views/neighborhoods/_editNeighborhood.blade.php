@@ -9,26 +9,26 @@
             <a class="btn btn-primary btn-sm" href="{{ url()->previous() }}">Back</a>
         </h3>
         <hr>
-        <form action="{{ route('post.update',$data->id) }}" method="POST">
+        <form action="{{ route('neighborhood.update',$data->id) }}" method="POST">
             @csrf
             @method('PATCH')
-            
             <div class="row">
                 <div class="col">
                     <h6>Title:</h6>
-                    <input type="text" class="form-control bg-white" value="{{ $data->title }}" name ="title">
+                    <input type="text" class="form-control bg-white" value="{{ $data->title}}" name="title">
                 </div>
                 <div class="col">
                     <h6>Slug/Name</h6>
-                    <input type="text" class="form-control bg-white" value="{{ $data->name }}" name ="name">
+                    <input type="text" class="form-control bg-white" value="{{ $data->name }}" name="name">
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col">
                     <h6>Excerpt:</h6>
-                    <input type="text" class="form-control bg-white" value="{{ $data->excerpt }}" name ="excerpt">
+                    <input type="text" class="form-control bg-white" value="{{ $data->excerpt }} " name="excerpt">
                 </div>
             </div>
+            
 
             <div class="row mt-3">
                 <div class="col">
@@ -50,8 +50,8 @@
             <div class="row mt-3">
                 <div class="col">
                     <h6>Content:</h6>
-                    <textarea name="" id="wysiwyg" cols="30" rows="10" class="form-control" style="background-color:#fff !important;">
-                    {!! $data->content !!}
+                    <textarea name="content" id="wysiwyg" cols="30" rows="10" class="form-control" style="background-color:#fff !important;">
+                        {!! $data->content !!} 
                     </textarea>
                 </div>
             </div>
