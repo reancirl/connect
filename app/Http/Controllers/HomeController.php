@@ -60,4 +60,8 @@ class HomeController extends Controller
     {
         return view('frontend.case_studies');  
     }
+    public function neighbourhood_search()
+    {
+        return view('frontend.neighbourhood_search');
+    }
 }
