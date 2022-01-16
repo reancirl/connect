@@ -135,6 +135,7 @@
 }
 
 .case_button {
+    text-decoration: none;
     font-family: "Ropa Sans", Sans-serif;
     font-weight: 600;
     fill: #3a3594;
@@ -142,9 +143,10 @@
     background-color: #79c9d1;
     border-style: solid;
     border-width: 2px 2px 2px 2px;
+    padding: 10px;
     border-color: #79c9d1;
     border-radius: 30px 30px 30px 30px;
-    font-size: 0.9rem;
+    font-size: 15px;
     cursor: pointer;
 }
 .case_button:hover {
@@ -222,3 +224,106 @@
     z-index: 1;
 }
 /* END CSS IN REAL ESTATE INVESTMENT SERVICES */
+
+.accordion_border{
+    border-style: solid;
+    border-width: 1px;
+    border-color:#3A3594;
+    margin-bottom: -21;
+}
+.accordion {
+  background-color: white;
+  color: #3A3594;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  font-weight: 400;
+}
+.active, .accordion:hover {
+  background-color: white;
+  
+}
+.accordion:after {
+  content: '\002B';
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  background: #3A3594;
+  
+  
+}
+.active:after {
+  content: "\2212";
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border:none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+.accordion_li{
+    border-style: solid;
+    border-width: 1px;
+    border-color:#3A3594;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3a3594;
+    height: 50px;
+    line-height: 3;
+    cursor: pointer;
+}
+.accordion_li:hover {
+    background-color: #403254;
+    color: #79C9D1;
+}.p_hidden{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}.a_hidden{
+    color: #3A3594;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+}
+.case_studies_p:hover {
+    text-decoration: underline;
+}
+
+.our_button {
+    text-decoration: none;
+    font-family: "Ropa Sans", Sans-serif;
+    font-weight: 600;
+    fill: #3a3594;
+    color: #3a3594 !important;
+    background-color: #79c9d1;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    padding: 10px;
+    border-color: #79c9d1;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.our_button:hover {
+    border-color: #79c9d1;
+    background-color: transparent;
+    color: #79c9d1 !important;
+}

@@ -80,42 +80,42 @@ button.margin-right {
     <section>
         <div class="container">
                 <div class="mb-5">
-                    <h1 style="color: #403254; font-family: 'Roboto', Sans-serif; font-size: 40px; font-weight: 800; line-height:46px; text-align: center;">
+                    <h1 style="color: #403254; font-family: 'Roboto', Sans-serif; font-size: 40px; font-weight: 800; line-height:46px;">
                         But don’t just take our word for it - read <br> what our clients have to say about their <br> Connect.ca experience:
                     </h1>
                 </div>
             <div class="row mb-5">
                 <div class="col-sm-4">
-                    <div>
-                        <p style="color: #000000; font-family: 'Roboto', Sans-serif; font-size: 18px; font-weight: 400; line-height: 23px; text-align: center;"> 
+                    <div style="text-align:center;">
+                        <p style="color: #000000; font-family: 'Roboto', Sans-serif; font-size: 18px; font-weight: 400; line-height: 23px;"> 
                             Tanner Eldridge <br> Location | Type of Transaction
                          </p>
-                         <p style="text-align: center; color: #3A3594; font-family: 'Ropa Sans', Sans-serif; font-size: 20px; font-weight: 400; line-height: 25px;">
+                         <p style="text-align: center; color: #3A3594; font-family: 'Ropa Sans', Sans-serif; font-size: 20px; font-weight: 400; line-height: 25px;" class="case_studies_p">
                             “The Connect.ca team made investing in real estate as simple as possible. More than that, their professionalism and guidance made all the difference as I was looking to grow my portfolio”
                          </p>
-                         <button type="submit" class="case_button" style="text-align:center;">Read More</button>
+                         <a href="#" style="center;" class="case_button" role="button">Read More</a>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                        <div >
-                            <p style="color: #000000; font-family: 'Roboto', Sans-serif; font-size: 18px; font-weight: 400; line-height: 23px; text-align: center;"> 
+                        <div style="text-align:center;" >
+                            <p style="color: #000000; font-family: 'Roboto', Sans-serif; font-size: 18px; font-weight: 400; line-height: 23px; "> 
                                 Prem Prashad <br> Location | Type of Transaction
                             </p>
-                            <p style="text-align: center; color: #3A3594; font-family: 'Ropa Sans', Sans-serif; font-size: 20px; font-weight: 400; line-height: 25px;">
+                            <p style="text-align: center; color: #3A3594; font-family: 'Ropa Sans', Sans-serif; font-size: 20px; font-weight: 400; line-height: 25px;" class="case_studies_p">
                                 “Connect.ca introduced us to the condo market in 2006, we’ve done a number of transactions with them. They’re our exclusive Broker, and took the time to understand our objectives…”
                             </p>
-                            <button type="submit" class="case_button" style="text-align:center;">Read More</button>
+                            <a href="#" style="center;" class="case_button" role="button">Read More</a>
                         </div>
                 </div>
                 <div class="col-sm-4">
-                    <div>
-                        <p style="color: #000000; font-family: 'Roboto', Sans-serif; font-size: 18px; font-weight: 400; line-height: 23px; text-align: center;"> 
+                    <div style="text-align:center;">
+                        <p style="color: #000000; font-family: 'Roboto', Sans-serif; font-size: 18px; font-weight: 400; line-height: 23px;"> 
                             Rajesh Panilhar <br> Location | Type of Transaction
                          </p>
-                         <p style="text-align: center; color: #3A3594; font-family: 'Ropa Sans', Sans-serif; font-size: 20px; font-weight: 400; line-height: 25px;">
+                         <p style="text-align: center; color: #3A3594; font-family: 'Ropa Sans', Sans-serif; font-size: 20px; font-weight: 400; line-height: 25px;" class="case_studies_p">
                             “My second purchase through Connect.ca has been an excellent experience. They helped me buy a condo unit of my choice at its first launch, which is crucial…”
                          </p>
-                         <button type="submit" class="case_button" style="text-align:center;">Read More</button>
+                         <a href="#" style="center;" class="case_button" role="button">Read More</a>
                     </div>
                 </div>
             </div>
@@ -126,25 +126,25 @@ button.margin-right {
                     </div>
                 </div>
                 <div class="col-sm-4">
-                        <div >
-                            <p style="color: #000000; font-family: 'Roboto', Sans-serif; font-size: 18px; font-weight: 400; line-height: 23px; text-align: center;"> 
+                        <div style="text-align:center;">
+                            <p style="color: #000000; font-family: 'Roboto', Sans-serif; font-size: 18px; font-weight: 400; line-height: 23px;"> 
                                 Prem Prashad <br> Location | Type of Transaction
                             </p>
-                            <p style="text-align: center; color: #3A3594; font-family: 'Ropa Sans', Sans-serif; font-size: 20px; font-weight: 400; line-height: 25px;">
+                            <p style="text-align: center; color: #3A3594; font-family: 'Ropa Sans', Sans-serif; font-size: 20px; font-weight: 400; line-height: 25px;" class="case_studies_p">
                                 “Connect.ca introduced us to the condo market in 2006, we’ve done a number of transactions with them. They’re our exclusive Broker, and took the time to understand our objectives…”
                             </p>
-                            <button type="submit" class="case_button" style="text-align:center;">Read More</button>
+                            <a href="#" style="center;" class="case_button" role="button">Read More</a>
                         </div>
                 </div>
                 <div class="col-sm-4">
-                    <div>
-                        <p style="color: #000000; font-family: 'Roboto', Sans-serif; font-size: 18px; font-weight: 400; line-height: 23px; text-align: center;"> 
+                    <div style="text-align:center;">
+                        <p style="color: #000000; font-family: 'Roboto', Sans-serif; font-size: 18px; font-weight: 400; line-height: 23px;"> 
                             Rajesh Panilhar <br> Location | Type of Transaction
                          </p>
-                         <p style="text-align: center; color: #3A3594; font-family: 'Ropa Sans', Sans-serif; font-size: 20px; font-weight: 400; line-height: 25px;">
+                         <p style="text-align: center; color: #3A3594; font-family: 'Ropa Sans', Sans-serif; font-size: 20px; font-weight: 400; line-height: 25px;" class="case_studies_p">
                             “My second purchase through Connect.ca has been an excellent experience. They helped me buy a condo unit of my choice at its first launch, which is crucial…”
                          </p>
-                         <button type="submit" class="case_button" style="text-align:center;">Read More</button>
+                         <a href="#" style="align:center;" class="case_button" role="button">Read More</a>
                     </div>
                 </div>
             </div>

@@ -64,4 +64,12 @@ class HomeController extends Controller
     {
         return view('frontend.real_estate_investment_services');  
     }
+    public function neighbourhood_search()
+    {
+        return view('frontend.neighbourhood_search');
+    }
+    public function our_agents()
+    {
+        return view('frontend.our_agents');
+    }
 }

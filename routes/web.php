@@ -24,6 +24,8 @@ Route::get('/join-our-inner-circle', [HomeController::class, 'join_our_inner_cir
 Route::get('/individual-listing', [HomeController::class, 'individual_listing'])->name('individual_listing');
 Route::get('/case-studies', [HomeController::class, 'case_studies'])->name('case_studies');
 Route::get('/real-estate-investment-services', [HomeController::class, 'reis'])->name('real_estate_investment_services');
+Route::get('/neighbourhood-search',[HomeController::class,'neighbourhood_search'])->name('neighbourhood_search');
+Route::get('/our-agents',[HomeController::class,'our_agents'])->name('our_agents');
 
 Route::get('/resale-real-estate-services', [HomeController::class, 'rres'])->name('rres');
 Route::get('/investment-to-build-wealth', [HomeController::class, 'itbw'])->name('itbw');

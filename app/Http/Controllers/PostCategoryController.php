@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\PostCategory;
 use Illuminate\Http\Request;
+use Auth;
+
 
 class PostCategoryController extends Controller
 {
@@ -23,9 +25,9 @@ class PostCategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(PostCategory $postCategory)
     {
-        //
+        return view('categories.create');
     }
 
     /**
@@ -36,7 +38,12 @@ class PostCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $addCategory = new PostCategory;
+        $addCategory->name = $request->name;
+        $addCategory->slug = $request->slug;
+        $addCategory->save();
+
+        return redirect('/category')->with("Category Added Successfully");
     }
 
     /**
@@ -56,9 +63,10 @@ class PostCategoryController extends Controller
      * @param  \App\Models\PostCategory  $postCategory
      * @return \Illuminate\Http\Response
      */
-    public function edit(PostCategory $postCategory)
+    public function edit($id)
     {
-        //
+        $data =  PostCategory::find($id);
+        return view('categories.edit',compact('data'));
     }
 
     /**
@@ -68,9 +76,14 @@ class PostCategoryController extends Controller
      * @param  \App\Models\PostCategory  $postCategory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, PostCategory $postCategory)
+    public function update(Request $request, $id)
     {
-        //
+        $postCategory = PostCategory::find($id);
+        $postCategory->name = $request->name;
+        $postCategory->slug = $request->slug;
+        $postCategory->update();
+
+        return redirect('/category')->with('success', 'Category Updated Successfully ');
     }
 
     /**
@@ -79,8 +92,10 @@ class PostCategoryController extends Controller
      * @param  \App\Models\PostCategory  $postCategory
      * @return \Illuminate\Http\Response
      */
-    public function destroy(PostCategory $postCategory)
+    public function destroy($id)
     {
-        //
+        $postCategory = PostCategory::find($id);
+        $postCategory->delete();
+        return redirect('/category')->with('success', 'Successfuly Deleted');
     }
 }

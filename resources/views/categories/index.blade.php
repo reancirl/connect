@@ -31,9 +31,14 @@
                             
                         </td>
                         <td>
-                            <button class="btn btn-success btn-sm">View</button>
-                            <button class="btn btn-primary btn-sm">Edit</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
+                            <a href="{{ url('category/'.$d->id.'/edit') }}" class="btn btn-primary btn-sm">Edit</a>
+                            
+                            <form action="{{ route('category.destroy',$d->id) }}" method="POST" style="display: inline-block; text-align: center; vertical-align: middle;">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-danger btn-sm btn-delete" type="button" >Delete</button>
+
+                            </form>
                         </td>
                     </tr>
                 @endforeach
@@ -41,4 +46,25 @@
           </table>
     </div>
 </div>
+
+<div class="append-neighborhood"></div>
+@endsection
+
+@section('script')
+<script type="text/javascript">
+   
+    $('.btn-delete').click(function(e){
+			swal ({
+			    title: "Are you sure?",
+			      text: "Are you sure you want to delete this Category?",
+			      icon: "warning",
+			      buttons: true,
+			      dangerMode: true,
+			}).then((result) => {
+				if (result) {
+					$(this).closest('form').submit();
+				}
+			})
+		});
+</script>
 @endsection
