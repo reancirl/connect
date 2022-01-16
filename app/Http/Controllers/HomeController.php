@@ -64,4 +64,8 @@ class HomeController extends Controller
     {
         return view('frontend.neighbourhood_search');
     }
+    public function our_agents()
+    {
+        return view('frontend.our_agents');
+    }
 }
