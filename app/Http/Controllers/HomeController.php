@@ -60,4 +60,8 @@ class HomeController extends Controller
     {
         return view('frontend.case_studies');  
     }
+    public function reis()
+    {
+        return view('frontend.real_estate_investment_services');  
+    }
 }
