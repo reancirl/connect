@@ -11,10 +11,6 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\MenuController;
 
-Route::get('/', function () {
-    return view('frontend.home');
-});
-
 Auth::routes(['register' => false]);
 
 Route::get('/', [HomeController::class, 'front_page']);

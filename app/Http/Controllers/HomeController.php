@@ -40,6 +40,7 @@ class HomeController extends Controller
 
         $featured_developments = Project::with('media')
                                         ->where('is_featured',1)
+                                        ->where('status','Publish')
                                         ->where('sales_status','Under Development')
                                         ->get();
 

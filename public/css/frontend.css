@@ -175,7 +175,12 @@
     letter-spacing: -0.5px;
     padding-bottom:5px;
 }
-
+.menu-toggle i {
+    color: #fff;
+}
+.menu-fullscreen:before {
+    background: #3A3594;
+}
 /* Under This */
 /* Is CSS in*/
 /*  Real Estate Investment Services */
