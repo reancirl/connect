@@ -21,26 +21,27 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($media as $medias)
+                @foreach ($media as $m)
                 <tr>
                     <td>
-                        <img src="{{asset('storage/'.$medias->path) }}" alt="{{ $medias->alt_text }}" width="100%" height="100%">
+                        <img src="{{asset('storage/'.$m->path) }}" alt="{{ $m->alt_text }}" width="100%" height="100%">
                     </td>
-                    <td>{{ $medias->title }}</td>
-                    <td>{{ $medias->alt_text }}</td>
+                    <td>{{ $m->title }}</td>
+                    <td>{{ $m->alt_text }}</td>
                     <td>
-                        <form action="{{ route('media.destroy',$medias->id) }}" method="post">
+                        <form action="{{ route('media.destroy',$m->id) }}" method="post">
                             @csrf
                             @method('DELETE')
-                                <button type="submit" class="btn btn-danger">
-                                    Delete
-                                </button>
+                            <button type="submit" class="btn btn-danger">
+                                Delete
+                            </button>
                         </form>
                     </td>
                 </tr> 
                 @endforeach
             </tbody>
-          </table>
+        </table>
+        {{ $media->links() }}
     </div>
 </div>
 @endsection

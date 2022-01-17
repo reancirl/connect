@@ -31,7 +31,7 @@
                         </div>
                     </div>
                 </div>
-                <nav id="menu2" class="bar bar-2 hidden-xs">
+                <nav id="menu2" class="bar bar-2 hidden-xs" style="background-color:transparent;z-index:10000 !important;">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-2 text-center text-left-sm hidden-xs order-lg-2">
@@ -52,11 +52,13 @@
                             </div>
                             <div class="col-lg-5 text-right text-left-xs text-left-sm order-lg-3">
                                 <div class="bar__module">
-                                    <a href="tel:416-800-9272" class="secondary_text_color" style="line-height:200%;">
+                                    <a href="tel:416-800-9272" class="secondary_text_color">
                                         Call Us
                                         <br>
                                         416-800-9272
                                     </a>
+                                    {{-- @include('includes.full_menu') --}}
+
                                 </div>
                             </div>
                         </div>

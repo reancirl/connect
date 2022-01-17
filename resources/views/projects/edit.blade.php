@@ -18,27 +18,26 @@
             @method('PATCH')
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Title</span>
-                <input type="text" class="form-control" placeholder="Title" name="title" value="{{ $data->title }}" required aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Title" name="title" value="{{ $data->title }}" required>
             </div>
             <div class="mb-3">
                 <span class="input-group-text" id="basic-addon1">Content</span>
-                <textarea name="content" cols="30" rows="10" class="form-control" required id="wysiwyg" required>{{ $data->content }}</textarea>
+                <textarea name="content" cols="30" rows="10" class="form-control" required id="wysiwyg">{{ $data->content }}</textarea>
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Excerpt</span>
-                <input type="text" class="form-control" placeholder="Excerpt" name="excerpt" value="{{ $data->excerpt }}" required aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Excerpt" name="excerpt" value="{{ $data->excerpt }}">
             </div>
             <div class="input-group mb-3">
                 <label class="input-group-text" for="inputGroupSelect01">Status</label>
                 <select class="form-select" required name="status" id="inputGroupSelect01">
-                    <option selected>-- Choose Status --</option>
-                    <option value="Publish" @php if($data->status == "Publish") echo 'selected' @endphp>Publish</option>
                     <option value="Draft" @php if($data->status == "Draft") echo 'selected' @endphp>Draft</option>
+                    <option value="Publish" @php if($data->status == "Publish") echo 'selected' @endphp>Publish</option>
                 </select>
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Slug/Name</span>
-                <input type="text" class="form-control" placeholder="Name" name="name" value="{{ $data->name }}" required aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Name" name="name" value="{{ $data->name }}" required>
             </div>
             <div class="input-group mb-3">
                 <label class="input-group-text" for="inputGroupSelect01">Is Featured?</label>
@@ -50,21 +49,32 @@
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Address</span>
-                <input type="text" class="form-control" placeholder="Address" name="address" value="{{ $data->address }}" required aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Address" name="address" value="{{ $data->address }}" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Number of Beds</span>
+                <input type="number" class="form-control" placeholder="Beds" name="beds" value="{{ $data->beds }}" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Number of Baths</span>
+                <input type="number" class="form-control" placeholder="Baths" name="baths" value="{{ $data->baths }}" required>
             </div>
             <div class="input-group mb-3">
                 <label class="input-group-text" for="inputGroupSelect01">Sales Status</label>
                 <select class="form-select" required name="sales_status" id="inputGroupSelect01">
                     <option selected>-- Choose Sales Status --</option>
-                    <option value="For Sale" @php if($data->sales_status == "For Sale") echo 'selected' @endphp>For Sale</option>
                     <option value="Under Development" @php if($data->sales_status == "Under Development") echo 'selected' @endphp>Under Development</option>
-                    <option value="Sold" @php if($data->sales_status == "Sold") echo 'selected' @endphp>Sold</option>
+                    <option value="Coming soon" @php if($data->sales_status == "Coming soon") echo 'selected' @endphp>Coming soon</option>
+                    <option value="VIP Access" @php if($data->sales_status == "VIP Access") echo 'selected' @endphp>VIP Access</option>
+                    <option value="Available" @php if($data->sales_status == "Available") echo 'selected' @endphp>Available</option>
+                    <option value="Sold-out" @php if($data->sales_status == "Sold-out") echo 'selected' @endphp>Sold-out</option>
+                    <option value="Cancelled" @php if($data->sales_status == "Cancelled") echo 'selected' @endphp>Cancelled</option>
                 </select>
             </div>
             <div class="input-group mb-3">
                 <label class="input-group-text" for="inputGroupSelect01">Neighborhoods</label>
-                <select class="form-select" required name="neighborhood_id" id="inputGroupSelect01">
-                    <option selected>-- Choose Neighborhoods --</option>
+                <select class="form-select" name="neighborhood_id" id="inputGroupSelect01">
+                    <option selected value="">-- Choose Neighborhoods --</option>
                     @foreach ($neighborhoods as $neighborhoods)
                         <option value="{{ $neighborhoods->id }}" @php if($data->neighborhood_id == $neighborhoods->id) echo 'selected' @endphp>{{ $neighborhoods->title }}</option>
                     @endforeach
@@ -72,8 +82,8 @@
             </div>
             <div class="input-group mb-3">
                 <label class="input-group-text" for="inputGroupSelect01">Developers</label>
-                <select class="form-select" required name="developer_id" id="inputGroupSelect01">
-                    <option selected>-- Choose Developers --</option>
+                <select class="form-select" name="developer_id" id="inputGroupSelect01">
+                    <option selected value="">-- Choose Developers --</option>
                     @foreach ($developers as $developers)
                         <option value="{{ $developers->id }}" @php if($data->developer_id == $developers->id) echo 'selected' @endphp>{{ $developers->title }}</option>
                     @endforeach

@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes(['register' => false]);
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'front_page']);
 Route::get('/our-story', [HomeController::class, 'ourstory']);
 Route::get('/thank-you', [HomeController::class, 'thankyou'])->name('thankyou');
 Route::get('/join-our-inner-circle', [HomeController::class, 'join_our_inner_circle'])->name('join_our_inner_circle');
