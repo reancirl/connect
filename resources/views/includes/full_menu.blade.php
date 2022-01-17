@@ -1,7 +1,7 @@
 <div class="bar__module">
 	<div class="modal-instance pull-right">
 		<a class="modal-trigger menu-toggle" href="#" style="background-color:#3A3594 !important;">
-				<i class="stack-interface stack-menu"></i>
+				<i class="stack-interface stack-menu" style="color:#fff !important;"></i>
 			</a>
 		<div class="modal-container menu-fullscreen">
 			<div class="modal-content" data-width="100%" data-height="100%">
