@@ -3,7 +3,7 @@
 		<a class="modal-trigger menu-toggle" href="#" style="background-color:#3A3594 !important;">
 				<i class="stack-interface stack-menu" style="color:#fff !important;"></i>
 			</a>
-		<div class="modal-container menu-fullscreen" style="background-color:#3A3594 !important;">
+		<div class="modal-container menu-fullscreen" style="background-color: rgba(58,53,148, 0.8) !important;">
 			<div class="modal-content" data-width="100%" data-height="100%">
 				<div class="pos-vertical-center pos-asbolute text-center">
 					<ul class="menu-vertical" id="main_menu_items">
