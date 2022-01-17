@@ -6,7 +6,7 @@
 		<div class="modal-container menu-fullscreen" style="background-color: rgba(58,53,148, 0) !important;">
 			<div class="modal-content" data-width="100%" data-height="100%">
 				<div class="pos-vertical-center pos-asbolute text-center">
-					<ul class="menu-vertical" id="main_menu_items">
+					<ul class="menu-vertical main_menu_items" id="main_menu_items">
 						@php
 							$main_menu_items = \App\Models\MenuItem::with('sub_menu')->where('menu_id',1)->get();
 						@endphp

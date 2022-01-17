@@ -138,31 +138,15 @@
         <script src="{{ asset('stack/js/scripts.js') }}"></script>
         {{-- Menu script --}}
         <script>
-            $('#our_services').click(function() {
-                $('#main_menu_items').hide();
-                $('#our_services_items').show();
-            })
-            // $('#property_search').click(function() {
-            //     $('#main_menu_items').hide();
-            //     $('#property_search_items').show();
-            // })
-            $('#resources').click(function() {
-                $('#main_menu_items').hide();
-                $('#resources_items').show();
-            })
-            $('#about_connect').click(function() {
-                $('#main_menu_items').hide();
-                $('#about_connect_items').show();
-            })
             $('.main_menu_item_btn').click(function() {
-                $('#main_menu_items').hide()
+                $('.menu-vertical').hide()
                 var temp_class_name = this.id
                 temp_class_name = '.'+temp_class_name
                 $(temp_class_name).show();
             })
             $('.back_to_main_menu_items').click(function() {
                 $('.menu-vertical').hide()
-                $('#main_menu_items').show()
+                $('.main_menu_items').show()
             })
         </script>
     </body>
