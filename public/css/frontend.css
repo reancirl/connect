@@ -256,3 +256,46 @@
     background-color: transparent;
     color: #79c9d1 !important;
 }
+
+.meet_our_agents_button {
+    text-decoration: none;
+    font-family: "Ropa Sans", Sans-serif;
+    font-weight: 600;
+    fill: #3a3594;
+    color: #3a3594 !important;
+    background-color: #79c9d1;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    padding: 10px;
+    border-color: #79c9d1;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 15px;
+    cursor: pointer;
+  
+}
+.meet_our_agents_button:hover {
+    border-color: #79c9d1;
+    background-color: transparent;
+    color: #79c9d1 !important;
+}
+.meet_the_team_button {
+    text-decoration: none;
+    font-family: "Ropa Sans", Sans-serif;
+    font-weight: 600;
+    fill: #3a3594;
+    color: #3a3594 !important;
+    background-color: #79c9d1;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    padding: 10px;
+    border-color: #79c9d1;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 15px;
+    cursor: pointer;
+  
+}
+.meet_the_team_button:hover {
+    border-color: #79c9d1;
+    background-color: transparent;
+    color: #79c9d1 !important;
+}

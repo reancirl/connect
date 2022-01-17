@@ -284,7 +284,7 @@
             <a class="btn_connect_button mr-4">Read Our Story</a>
             <a class="btn_connect_button">Meet The Team</a>
         </div>
-        <div class="col" style="background-image:url('{{ asset('uploads/owners.jpeg') }}'); background-size: cover;">
+        <div class="col" style="background-ima[=]ge:url('{{ asset('uploads/owners.jpeg') }}'); background-size: cover;">
         
         </div>
     </section>

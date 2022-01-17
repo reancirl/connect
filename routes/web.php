@@ -25,6 +25,8 @@ Route::get('/individual-listing', [HomeController::class, 'individual_listing'])
 Route::get('/case-studies', [HomeController::class, 'case_studies'])->name('case_studies');
 Route::get('/neighbourhood-search',[HomeController::class,'neighbourhood_search'])->name('neighbourhood_search');
 Route::get('/our-agents',[HomeController::class,'our_agents'])->name('our_agents');
+Route::get('/meet-the-team',[HomeController::class,'meet_the_team'])->name('meet_the_team');
+
 
 Route::get('/resale-real-estate-services', [HomeController::class, 'rres'])->name('rres');
 Route::get('/investment-to-build-wealth', [HomeController::class, 'itbw'])->name('itbw');

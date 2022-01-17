@@ -68,4 +68,8 @@ class HomeController extends Controller
     {
         return view('frontend.our_agents');
     }
+    public function meet_the_team()
+    {
+        return view('frontend.meet_the_team');
+    }
 }
