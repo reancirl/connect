@@ -34,15 +34,15 @@
                 <div class="col">
                     <h6>Status:</h6>
                     <select name="status" id="" class="form-control bg-white">
-                        <option value="">Draft</option>
-                        <option value="">Publish</option>
+                        <option value="draft">Draft</option>
+                        <option value="publish">Publish</option>
                     </select>
                 </div>
                 <div class="col">
                     <h6>Featured:</h6>
                     <select name="is_featured" id="" class="form-control bg-white">
-                        <option value="">Not-Featured</option>
-                        <option value="">Featured</option>
+                        <option value="0" {{ $data->is_featured == 0 ? 'selected' : '' }}>Not-Featured</option>
+                        <option value="1" {{ $data->is_featured == 1 ? 'selected' : '' }}>Featured</option>
                     </select>
                 </div>
             </div>
@@ -50,7 +50,7 @@
             <div class="row mt-3">
                 <div class="col">
                     <h6>Content:</h6>
-                    <textarea name="" id="wysiwyg" cols="30" rows="10" class="form-control" style="background-color:#fff !important;">
+                    <textarea name="content" id="wysiwyg" cols="30" rows="10" class="form-control" style="background-color:#fff !important;">
                     {!! $data->content !!}
                     </textarea>
                 </div>

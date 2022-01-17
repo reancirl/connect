@@ -31,7 +31,7 @@
                         </div>
                     </div>
                 </div>
-                <nav id="menu2" class="bar bar-2 hidden-xs">
+                <nav id="menu2" class="bar bar-2 hidden-xs" style="background-color:transparent;z-index:10000 !important;">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-2 text-center text-left-sm hidden-xs order-lg-2">
@@ -50,14 +50,17 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-5 text-right text-left-xs text-left-sm order-lg-3">
+                            <div class="col-lg-4 text-right text-left-xs text-left-sm order-lg-3">
                                 <div class="bar__module">
-                                    <a href="tel:416-800-9272" class="secondary_text_color" style="line-height:200%;">
+                                    <a href="tel:416-800-9272" class="secondary_text_color">
                                         Call Us
                                         <br>
                                         416-800-9272
                                     </a>
                                 </div>
+                            </div>
+                            <div class="col-lg-1 text-right text-left-xs order-lg-4">
+                                @include('includes.full_menu')
                             </div>
                         </div>
                     </div>
@@ -133,7 +136,35 @@
         <script src="{{ asset('stack/js/countdown.min.js') }}"></script>
         <script src="{{ asset('stack/js/smooth-scroll.min.js') }}"></script>
         <script src="{{ asset('stack/js/scripts.js') }}"></script>
-        
+        {{-- Menu script --}}
+        <script>
+            $('#our_services').click(function() {
+                $('#main_menu_items').hide();
+                $('#our_services_items').show();
+            })
+            // $('#property_search').click(function() {
+            //     $('#main_menu_items').hide();
+            //     $('#property_search_items').show();
+            // })
+            $('#resources').click(function() {
+                $('#main_menu_items').hide();
+                $('#resources_items').show();
+            })
+            $('#about_connect').click(function() {
+                $('#main_menu_items').hide();
+                $('#about_connect_items').show();
+            })
+            $('.main_menu_item_btn').click(function() {
+                $('#main_menu_items').hide()
+                var temp_class_name = this.id
+                temp_class_name = '.'+temp_class_name
+                $(temp_class_name).show();
+            })
+            $('.back_to_main_menu_items').click(function() {
+                $('.menu-vertical').hide()
+                $('#main_menu_items').show()
+            })
+        </script>
     </body>
 
 </html>

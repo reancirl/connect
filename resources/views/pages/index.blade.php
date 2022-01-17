@@ -5,10 +5,10 @@
     <div class="row">
         <h3>
             Pages
-            <a class="btn btn-primary btn-sm" href="{{ route('page.create') }}">Add New</a>
+            {{-- <a class="btn btn-primary btn-sm" href="{{ route('page.create') }}">Add New</a> --}}
         </h3>
         <hr>
-
+        <h1 class="text-center">Under maintenance(SEO related development)</h1>
         <table class="table table-bordered">
             <thead>
                 <tr>

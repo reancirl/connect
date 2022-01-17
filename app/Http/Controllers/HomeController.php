@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Project;
+use App\Models\Post;
+use App\Models\Media;
 
 class HomeController extends Controller
 {
@@ -26,6 +29,28 @@ class HomeController extends Controller
         return view('home');
     }
 
+    // FRONTEND PAGES
+    public function front_page()
+    {
+        $featured_listings = Project::with('media')
+                                    ->where('is_featured',1)
+                                    ->where('sales_status','!=','Under Development')
+                                    ->where('status','Publish')
+                                    ->get();
+
+        $featured_developments = Project::with('media')
+                                        ->where('is_featured',1)
+                                        ->where('status','Publish')
+                                        ->where('sales_status','Under Development')
+                                        ->get();
+
+        $featured_blog = Post::with('media')
+                                ->where('is_featured',1)
+                                ->where('status','publish')
+                                ->get();
+
+        return view('frontend.home',compact('featured_listings','featured_developments','featured_blog'));
+    }
     public function ourstory()
     {
         return view('frontend.ourstory');
@@ -59,6 +84,10 @@ class HomeController extends Controller
     public function case_studies()
     {
         return view('frontend.case_studies');  
+    }
+    public function reis()
+    {
+        return view('frontend.real_estate_investment_services');  
     }
     public function neighbourhood_search()
     {

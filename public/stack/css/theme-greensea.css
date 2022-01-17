@@ -5390,7 +5390,7 @@ body.dropdowns--hover .nav-sidebar-column .dropdown:hover > .dropdown__container
   margin-right: 0;
 }
 .menu-fullscreen:before {
-  background: rgba(0, 0, 0, 0.9);
+  background: #3A3594;
 }
 .menu-fullscreen .modal-content .modal-close-cross {
   right: 3.71428571em;

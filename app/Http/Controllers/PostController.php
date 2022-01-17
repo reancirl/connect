@@ -44,7 +44,7 @@ class PostController extends Controller
         $addPost->content = $request->content;
         $addPost->excerpt = $request->excerpt;
         $addPost->status = $request->status;
-        $addPost->is_featured = $request->featured;
+        $addPost->is_featured = $request->is_featured;
         $addPost->created_by = Auth::user()->id;
         $addPost->save();
 

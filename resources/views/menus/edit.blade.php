@@ -15,7 +15,8 @@
                     <tr>
                         <th>Main Title</th>
                         <th>Sub Menu Title</th>
-                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Custom Class Name</th>
                         <th width="15%">Action</th>
                     </tr>
                 </thead>
@@ -30,6 +31,9 @@
                             </td>
                             <td>
                                 <input type="text" value="{{ $d->link }}" class="form-control bg-white">
+                            </td>
+                            <td>
+                                <input type="text" value="{{ $d->custom_class_name }}" class="form-control bg-white">
                             </td>
                             <td>
                                 <button class="btn btn-success btn-sm add_sub_menu" type="button">Add Sub Menu</button>
@@ -47,6 +51,9 @@
                                 </td>
                                 <td>
                                     <input type="text" value="{{ $sub_menu->link }}" class="form-control bg-white">
+                                </td>
+                                <td>
+                                    <input type="text" value="------" class="form-control text-center" readonly>
                                 </td>
                                 <td>
                                     <button class="btn btn-danger btn-sm">Delete</button>
@@ -75,6 +82,7 @@
         var tr = $('<tr><td><input type="text" value="" class="form-control bg-white"></td>')
         tr.append('<td><input type="text" value="------" class="form-control text-center" readonly></td>')
         tr.append('<td><input type="text" value="" class="form-control bg-white"></td>')
+        tr.append('<td><input type="text" value="" class="form-control bg-white"></td>')
         tr.append('<td><button class="btn btn-success btn-sm add_sub_menu" type="button">Add Sub Menu</button><button class="btn btn-danger btn-sm" type="button">Delete</button></td></tr>')
         tbody.append(tr);
     })
@@ -84,6 +92,7 @@
         var tr = $('<tr><td><input type="text" value="------" class="form-control text-center" readonly></td>')
         tr.append('<td><input type="text" value="" class="form-control bg-white"></td')
         tr.append('<td><input type="text" value="" class="form-control bg-white"></td>')
+        tr.append('<td><input type="text" value="------" class="form-control text-center" readonly></td>')
         tr.append('<td><button class="btn btn-danger btn-sm" type="button">Delete</button></td></tr>')
         tbody.append(tr);
     })
