@@ -8,7 +8,7 @@
 				<div class="pos-vertical-center pos-asbolute text-center">
 					<ul class="menu-vertical" id="main_menu_items">
 						@php
-							$main_menu_items = \App\Models\Menuitem::with('sub_menu')->where('menu_id',1)->get();
+							$main_menu_items = \App\Models\MenuItem::with('sub_menu')->where('menu_id',1)->get();
 						@endphp
 						@foreach ($main_menu_items as $item)
 							<li class="h2 pt-3"> 
