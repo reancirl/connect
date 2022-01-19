@@ -72,26 +72,28 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex mb-4">
-                <input type="text" class="rounded-0 search_input search_fields thin_border_right flex-grow-1" placeholder="Enter a city, town neighbourhood or address">
+            <form action="">
+                <div class="homepage_search_section mb-4">
+                    <input name="keyword" type="text" class="rounded-0 search_input search_fields thin_border_right" style="width:100%;" placeholder="Enter a city, town neighbourhood or address">
 
-                <select name="" id="" style="border-radius:0px !important;text-align:center;" class="search_fields thin_border_right">
-                    <option disabled selected>Property Type</option>
-                </select>
-                <select name="" id="" style="border-radius:0px !important;text-align:center;" class="search_fields thin_border_right">
-                    <option disabled selected>Min Price</option>
-                </select>
-                <select name="" id="" style="border-radius:0px !important;text-align:center;" class="search_fields thin_border_right">
-                    <option disabled selected>Max Price</option>
-                </select>
-                <select name="" id="" style="border-radius:0px !important;text-align:center;" class="search_fields thin_border_right">
-                    <option disabled selected>Beds</option>
-                </select>
-                <select name="" id="" style="border-radius:0px !important;text-align:center;" class="search_fields">
-                    <option disabled selected>Baths</option>
-                </select>
-            </div>
-            <a class="btn_connect_button" style="font-weight:500;">Find Listings</a>
+                    <select name="type" id="" style="border-radius:0px !important;text-align:center;" class="search_fields thin_border_right">
+                        <option disabled selected value="">Property Type</option>
+                    </select>
+                    <select name="min_price" id="" style="border-radius:0px !important;text-align:center;" class="search_fields thin_border_right">
+                        <option disabled selected value="">Min Price</option>
+                    </select>
+                    <select name="max_price" id="" style="border-radius:0px !important;text-align:center;" class="search_fields thin_border_right">
+                        <option disabled selected value="">Max Price</option>
+                    </select>
+                    <select name="beds" id="" style="border-radius:0px !important;text-align:center;" class="search_fields thin_border_right">
+                        <option disabled selected value="">Beds</option>
+                    </select>
+                    <select name="baths" id="" style="border-radius:0px !important;text-align:center;" class="search_fields">
+                        <option disabled selected value="">Baths</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn_connect_button pt-2">Find Listings</button>
+            </form>
             <p style="color:#000; font-weight:300; font-size:16px;margin-top:2rem;margin-bottom:0px;padding-bottom:0px;">
                 Or search active listings for sale by:
             </p> 
@@ -274,7 +276,7 @@
             <a class="btn_connect_button mr-4">Read Our Story</a>
             <a class="btn_connect_button">Meet The Team</a>
         </div>
-        <div class="col" style="background-ima[=]ge:url('{{ asset('uploads/owners.jpeg') }}'); background-size: cover;">
+        <div class="col" style="background-image:url('{{ asset('uploads/owners.jpeg') }}'); background-size: cover;">
         
         </div>
     </section>

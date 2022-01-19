@@ -19,7 +19,7 @@
     border-color: #79c9d1;
     border-radius: 30px 30px 30px 30px;
     font-size: 0.9rem;
-    padding: .8rem 1rem .8rem 1rem;
+    padding: 0.8rem 1rem 0.8rem 1rem;
     cursor: pointer;
 }
 .btn_connect_button:hover {
@@ -97,7 +97,7 @@
     opacity: 1 !important;
 }
 .accordion__title::before {
-    display:none;
+    display: none;
 }
 .sticky_form_input {
     background-color: transparent !important;
@@ -155,32 +155,40 @@
     color: #79c9d1 !important;
 }
 .featured_section {
-    margin-left:5%;
-    margin-right:5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .featured_listing_a:hover {
     text-decoration: none;
 }
 .featured_listings_address {
-    color: #3A3594;
-    text-decoration:underline;
-    font-size:19px;
+    color: #3a3594;
+    text-decoration: underline;
+    font-size: 19px;
     letter-spacing: -0.5px;
-    font-weight:300;
+    font-weight: 300;
 }
 .bed_bath_count {
     color: black;
-    font-size:17px;
-    font-weight:400;
+    font-size: 17px;
+    font-weight: 400;
     letter-spacing: -0.5px;
-    padding-bottom:5px;
+    padding-bottom: 5px;
 }
 .menu-toggle i {
     color: #fff !important;
 }
 .menu-fullscreen:before {
-    background-color: #3A3594 !important;
+    background-color: #3a3594 !important;
 }
+.homepage_search_section {
+    display: flex;
+}
+
+.homepage_search_section :first-child {
+    width: 300% !important;
+}
+
 /* Under This */
 /* Is CSS in*/
 /*  Real Estate Investment Services */
@@ -189,11 +197,15 @@
     border-radius: 130px;
     position: relative;
     right: -55%;
-    top:-50px;
+    top: -50px;
     bottom: -12%;
     width: 220px !important;
     transform: scaleX(-1);
-    background: linear-gradient(29.76deg, rgba(255,255,255,0.47) 0%, #FFFFFF 100%);
+    background: linear-gradient(
+        29.76deg,
+        rgba(255, 255, 255, 0.47) 0%,
+        #ffffff 100%
+    );
     z-index: 1;
 }
 .oval-21 {
@@ -204,7 +216,11 @@
     bottom: -6%;
     width: 160px !important;
     transform: scaleX(-1);
-    background: linear-gradient(29.76deg, rgba(255,255,255,0.47) 0%, #FFFFFF 100%);
+    background: linear-gradient(
+        29.76deg,
+        rgba(255, 255, 255, 0.47) 0%,
+        #ffffff 100%
+    );
 }
 .oval-23 {
     height: 80px;
@@ -213,7 +229,11 @@
     left: 40%;
     width: 80px !important;
     transform: scaleX(-1);
-    background: linear-gradient(29.76deg, rgba(255,255,255,0.47) 0%, #FFFFFF 100%);
+    background: linear-gradient(
+        29.76deg,
+        rgba(255, 255, 255, 0.47) 0%,
+        #ffffff 100%
+    );
 }
 .oval-24 {
     height: 300px;
@@ -224,17 +244,25 @@
     top: -10%;
     width: 300px !important;
     transform: scaleX(-1);
-    background: linear-gradient(29.76deg, rgba(255,255,255,0.47) 0%, #FFFFFF 100%);
+    background: linear-gradient(
+        29.76deg,
+        rgba(255, 255, 255, 0.47) 0%,
+        #ffffff 100%
+    );
 }
 .oval-30 {
     height: 144px;
     border-radius: 80px;
     position: relative;
     float: right;
-    margin-top: -100px; 
+    margin-top: -100px;
     width: 144px !important;
     transform: scaleX(-1);
-    background: linear-gradient(36.92deg, rgba(241,242,249,0.12) 0%, #F1F2F9 100%);
+    background: linear-gradient(
+        36.92deg,
+        rgba(241, 242, 249, 0.12) 0%,
+        #f1f2f9 100%
+    );
     z-index: 1;
 }
 .oval-31 {
@@ -243,71 +271,73 @@
     position: relative;
     float: left;
     margin-left: 30%;
-    margin-top: -20%; 
+    margin-top: -20%;
     width: 144px !important;
     transform: scaleX(-1);
-    background: linear-gradient(36.92deg, rgba(241,242,249,0.12) 0%, #F1F2F9 100%);
+    background: linear-gradient(
+        36.92deg,
+        rgba(241, 242, 249, 0.12) 0%,
+        #f1f2f9 100%
+    );
     z-index: 1;
 }
 /* END CSS IN REAL ESTATE INVESTMENT SERVICES */
 
-.accordion_border{
+.accordion_border {
     border-style: solid;
     border-width: 1px;
-    border-color:#3A3594;
+    border-color: #3a3594;
     margin-bottom: -21;
 }
 .accordion {
-  background-color: white;
-  color: #3A3594;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 20px;
-  transition: 0.4s;
-  font-weight: 400;
+    background-color: white;
+    color: #3a3594;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    font-weight: 400;
 }
-.active, .accordion:hover {
-  background-color: white;
-  
+.active,
+.accordion:hover {
+    background-color: white;
 }
 .accordion:after {
-  content: '\002B';
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-  width: 12px;
-  height: 12px;
-  line-height: 12px;
-  border-radius: 50%;
-  font-size: 12px;
-  color: white;
-  text-align: center;
-  background: #3A3594;
-  
-  
+    content: "\002B";
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    background: #3a3594;
 }
 .active:after {
-  content: "\2212";
+    content: "\2212";
 }
 .panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  border:none;
-  font-size: 16px;
-  font-weight: 400;
-  color: #000000;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
 }
-.accordion_li{
+.accordion_li {
     border-style: solid;
     border-width: 1px;
-    border-color:#3A3594;
+    border-color: #3a3594;
     text-align: center;
     font-size: 16px;
     font-weight: 600;
@@ -318,13 +348,15 @@
 }
 .accordion_li:hover {
     background-color: #403254;
-    color: #79C9D1;
-}.p_hidden{
+    color: #79c9d1;
+}
+.p_hidden {
     font-size: 16px;
     font-weight: 400;
     color: #000000;
-}.a_hidden{
-    color: #3A3594;
+}
+.a_hidden {
+    color: #3a3594;
     cursor: pointer;
     font-size: 20px;
     font-weight: 400;
@@ -368,7 +400,6 @@
     border-radius: 30px 30px 30px 30px;
     font-size: 15px;
     cursor: pointer;
-  
 }
 .meet_our_agents_button:hover {
     border-color: #79c9d1;
@@ -389,7 +420,6 @@
     border-radius: 30px 30px 30px 30px;
     font-size: 15px;
     cursor: pointer;
-  
 }
 .meet_the_team_button:hover {
     border-color: #79c9d1;

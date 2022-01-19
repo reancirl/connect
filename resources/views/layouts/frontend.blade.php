@@ -89,7 +89,7 @@
                             <div class="row">
                                 <div class="col-sm-7"></div>
                                 <div class="col-sm-5 pr-2">
-                                    <button type="submit" class="btn_connect_button mt-3">Let's Connect</button>
+                                    <button type="submit" class="btn_connect_button mt-3 pt-2">Let's Connect</button>
                                 </div>
                             </div>
                         </form>
