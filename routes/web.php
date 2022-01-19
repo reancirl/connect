@@ -26,6 +26,8 @@ Route::get('/individual-listing', [HomeController::class, 'individual_listing'])
 Route::get('/resale-real-estate-services', [HomeController::class, 'rres'])->name('rres');
 Route::get('/investment-to-build-wealth', [HomeController::class, 'itbw'])->name('itbw');
 Route::get('/investors-faq', [HomeController::class, 'if'])->name('if');
+Route::get('/feature-listing', [HomeController::class, 'feature_listing'])->name('feature_listing');
+
 
 Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');
 
