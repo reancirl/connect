@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Auth;
 
 class PostController extends Controller
 {
@@ -23,9 +24,10 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Post $post)
     {
-        //
+        $data = $post;
+        return view('posts.create',compact('data'));
     }
 
     /**
@@ -36,7 +38,17 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $addPost = new Post;
+        $addPost->name = $request->name;
+        $addPost->title = $request->title;
+        $addPost->content = $request->content;
+        $addPost->excerpt = $request->excerpt;
+        $addPost->status = $request->status;
+        $addPost->is_featured = $request->is_featured;
+        $addPost->created_by = Auth::user()->id;
+        $addPost->save();
+
+        return redirect('/post')->with("Post Added Successfully");
     }
 
     /**
@@ -71,7 +83,15 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $post->name = $request->name;
+        $post->title = $request->title;
+        $post->content = $request->content;
+        $post->excerpt = $request->excerpt;
+        $post->status = $request->status;
+        $post->is_featured = $request->is_featured;
+        $post->update();
+
+        return redirect('/post')->with('success', 'Post Updated Successfully ');
     }
 
     /**
@@ -82,6 +102,8 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        $post->delete();
+
+        return redirect('/post')->with('success', 'Successfuly Deleted');
     }
 }

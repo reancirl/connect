@@ -43,6 +43,8 @@ class ProjectController extends Controller
         $project->name = $request->name;
         $project->is_featured = $request->is_featured;
         $project->content = $request->content;
+        $project->beds = $request->beds;
+        $project->baths = $request->baths;
         $project->save();
 
         return Redirect::to('/project')->with('success', 'Successfully Update Project');
@@ -81,6 +83,8 @@ class ProjectController extends Controller
         $project->name = $request->name;
         $project->is_featured = $request->is_featured;
         $project->content = $request->content;
+        $project->beds = $request->beds;
+        $project->baths = $request->baths;
         $project->update();
 
         return Redirect::to('/project')->with('success', 'Successfully Update Project');

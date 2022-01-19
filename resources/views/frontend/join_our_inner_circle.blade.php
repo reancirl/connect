@@ -44,19 +44,6 @@ button.margin-right {
 }
 
 </style>
-{{-- <section class="bg--dark">
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-md-6">
-                <h4 style="color:#FFDE59; font-family: 'Roboto', San-serif; font-size:55px; font-weight:800;">Join Our Inner Circle</h4>
-                <p style="font-size:17px; font-weight:400; font-family:'Ropa Sans', Sans-serif;"> The Inner Circle is Connect.ca’s exclusive club for seasoned real estate investors who have completed two or more deals with our team. These clients receive preferential access, portfolio management, and personal attention from our founders. </p>
-            </div>
-            <div class="col-md-6">
-                <div class=""> <img alt="image" src="{{ asset('uploads/1-CellphoneIllustration.png') }}"> </div>
-            </div>
-        </div>
-    </div>
-</section> --}}
 <div class="main-container">
 <section class="space--sm unpad--bottom switchable text-center testimonial testimonial-1" style="padding-bottom:50px; background-color: #000000">
     <div class="container">

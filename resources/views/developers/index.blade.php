@@ -27,7 +27,7 @@
                             {{ $d->name }}
                         </td>
                         <td>
-                            {{ $d->author->name ?? '' }}
+                            {{ $d->author->name ??  Auth::user()->name;}}
                         </td>
                         <td>
                             {{ date('M d, Y', strtotime($d->created_at)); }}

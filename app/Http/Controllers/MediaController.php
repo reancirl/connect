@@ -13,7 +13,7 @@ class MediaController extends Controller
 
     public function index(Request $request)
     {
-        $media = Media::paginate(25);
+        $media = Media::latest()->simplePaginate(25);
         return view('media.index',compact('request','media'));
     }
     public function create()
@@ -58,9 +58,10 @@ class MediaController extends Controller
         //
     }
 
-    public function destroy(Media $media)
+    public function destroy($id)
     {
+        $media = Media::find($id);
         $media->delete();
-        return redirect()->route('media.index')->with('message','Media deleted successfully');
+        return redirect()->back()->with('success','Media deleted successfully');
     }
 }

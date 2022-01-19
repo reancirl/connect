@@ -27,21 +27,29 @@
                             {{ $d->title }}
                         </td>
                         <td>
-                            {{ $d->author->name ?? '' }}
+                            {{ $d->author->name ?? Auth::user()->name }}
                         </td>
                         <td>
 
                         </td>
                         <td>
-                            
+                            {{ $d->status}}
                         </td>
                         <td>
-
+                            {{ date('M d, Y', strtotime($d->created_at)) }}
                         </td>
                         <td>
                             <a class="btn btn-success btn-sm">View</a>
-                            <a href="{{ route('post.edit',$d->id) }}" class="btn btn-primary btn-sm">Edit</a>
-                            <a class="btn btn-danger btn-sm">Delete</a>
+                            <a href="{{ url('post/'.$d->id.'/edit') }}" class="btn btn-primary btn-sm">Edit</a>
+                            {{-- <a href="{{ route('post.edit',$d->id) }}" class="btn btn-primary btn-sm">Edit</a> --}}
+                            
+
+                            <form action="{{ route('post.destroy',$d->id) }}" method="POST" style="display: inline-block; text-align: center; vertical-align: middle;">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-danger btn-sm btn-delete" type="button" >Delete</button>
+
+                            </form>
                         </td>
                     </tr>
                 @endforeach
@@ -49,4 +57,24 @@
           </table>
     </div>
 </div>
+<div class="append-neighborhood"></div>
+@endsection
+
+@section('script')
+<script type="text/javascript">
+   
+    $('.btn-delete').click(function(e){
+			swal ({
+			    title: "Are you sure?",
+			      text: "Are you sure you want to delete this Post?",
+			      icon: "warning",
+			      buttons: true,
+			      dangerMode: true,
+			}).then((result) => {
+				if (result) {
+					$(this).closest('form').submit();
+				}
+			})
+		});
+</script>
 @endsection

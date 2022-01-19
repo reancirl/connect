@@ -50,9 +50,11 @@
                     <label class="input-group-text" for="inputGroupSelect01">Sales Status</label>
                     <select class="form-select" required name="sales_status" id="inputGroupSelect01">
                         <option selected>-- Choose Sales Status --</option>
-                        <option value="For Sale">For Sale</option>
-                        <option value="Under Development">Under Development</option>
-                        <option value="Sold">Sold</option>
+                        <option value="For Sale">Coming soon</option>
+                        <option value="Under Development">VIP Access</option>
+                        <option value="Sold">Available</option>
+                        <option value="Sold">Sold-out</option>
+                        <option value="Sold">Cancelled</option>
                     </select>
                 </div>
                 <div class="input-group mb-3">
