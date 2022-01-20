@@ -14,7 +14,8 @@ class PagesController extends Controller
      */
     public function index()
     {
-        return view('pages.index');
+        $data = Pages::get();
+        return view('pages.index',compact('data'));
     }
 
     /**
@@ -55,9 +56,10 @@ class PagesController extends Controller
      * @param  \App\Models\Pages  $pages
      * @return \Illuminate\Http\Response
      */
-    public function edit(Pages $pages)
+    public function edit($id)
     {
-        //
+        $data = Pages::find($id);
+        return view('pages.edit',compact('data'));
     }
 
     /**
@@ -67,9 +69,13 @@ class PagesController extends Controller
      * @param  \App\Models\Pages  $pages
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Pages $pages)
+    public function update(Request $request, $id)
     {
-        //
+        $data = Pages::find($id);
+        $data->fill($request->all());
+        $data->save();
+
+        return redirect()->back()->with('success','Updated Successfully!');
     }
 
     /**

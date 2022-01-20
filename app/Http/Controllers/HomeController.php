@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Project;
 use App\Models\Post;
 use App\Models\Media;
+use App\Models\Pages;
 
 class HomeController extends Controller
 {
@@ -80,6 +81,11 @@ class HomeController extends Controller
     public function individual_listing()
     {
         return view('frontend.individual_listing');  
+    }
+
+    public function feature_listing()
+    {
+        return view('frontend.feature_listing');
     }
     public function case_studies()
     {

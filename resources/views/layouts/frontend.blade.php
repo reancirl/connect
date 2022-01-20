@@ -2,7 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Connect</title>
+        <title>@yield('title')</title>
+        <meta name="description" content="@yield('description')">
+        <meta name="description" content="@yield('keywords')">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="{{ asset('stack/css/stack-interface.css') }}" rel="stylesheet" type="text/css" media="all">
         <link href="{{ asset('stack/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
@@ -89,7 +91,7 @@
                             <div class="row">
                                 <div class="col-sm-7"></div>
                                 <div class="col-sm-5 pr-2">
-                                    <button type="submit" class="btn_connect_button mt-3">Let's Connect</button>
+                                    <button type="submit" class="btn_connect_button mt-3 pt-2">Let's Connect</button>
                                 </div>
                             </div>
                         </form>
@@ -138,31 +140,15 @@
         <script src="{{ asset('stack/js/scripts.js') }}"></script>
         {{-- Menu script --}}
         <script>
-            $('#our_services').click(function() {
-                $('#main_menu_items').hide();
-                $('#our_services_items').show();
-            })
-            // $('#property_search').click(function() {
-            //     $('#main_menu_items').hide();
-            //     $('#property_search_items').show();
-            // })
-            $('#resources').click(function() {
-                $('#main_menu_items').hide();
-                $('#resources_items').show();
-            })
-            $('#about_connect').click(function() {
-                $('#main_menu_items').hide();
-                $('#about_connect_items').show();
-            })
             $('.main_menu_item_btn').click(function() {
-                $('#main_menu_items').hide()
+                $('.menu-vertical').hide()
                 var temp_class_name = this.id
                 temp_class_name = '.'+temp_class_name
                 $(temp_class_name).show();
             })
             $('.back_to_main_menu_items').click(function() {
                 $('.menu-vertical').hide()
-                $('#main_menu_items').show()
+                $('.main_menu_items').show()
             })
         </script>
     </body>

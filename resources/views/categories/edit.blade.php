@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <h3>
-            Edit CAtegory
+            Edit Category
             <a class="btn btn-primary btn-sm" href="{{ url()->previous() }}">Back</a>
         </h3>
         <hr>
