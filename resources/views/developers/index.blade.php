@@ -13,6 +13,7 @@
         <table class="table table-bordered" id="data_table">
             <thead>
                 <tr>
+                    <th width="5%">Image</th>
                     <th width="30%">Name</th>
                     <th>Author</th>
                     <th>Date</th>
@@ -23,6 +24,15 @@
             <tbody>
                 @foreach ($data as $d)
                     <tr>
+                        <td>
+                           
+                            @if($d->image == null)
+                                <img src="{{asset('img/noimage.png') }}" alt="noimage" width="40" height="40">
+                            @else
+                                <img src="{{asset('storage/'.$d->image) }}" alt="image" width="40" height="40">
+                            @endif
+                            
+                        </td>
                         <td>
                             {{ $d->name }}
                         </td>
@@ -40,7 +50,6 @@
                             
                             <button class="btn btn-success btn-sm btn-view" data-url="{{ route('developer.show',$d->id) }}">View</button>
                             <button class="btn btn-primary btn-sm btn-edit" data-url="{{ route('developer.edit',$d->id) }}">Edit</button>
-                                
                             <form action="{{ route('developer.destroy',$d->id) }}" method="POST" style="display: inline-block; text-align: center; vertical-align: middle;">
                                 @csrf
                                 @method('DELETE')

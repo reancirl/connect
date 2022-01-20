@@ -23,6 +23,7 @@ Route::get('/real-estate-investment-services', [HomeController::class, 'reis'])-
 Route::get('/neighbourhood-search',[HomeController::class,'neighbourhood_search'])->name('neighbourhood_search');
 Route::get('/our-agents',[HomeController::class,'our_agents'])->name('our_agents');
 Route::get('/meet-the-team',[HomeController::class,'meet_the_team'])->name('meet_the_team');
+Route::get('/main-search',[HomeController::class,'main_search'])->name('main_search');
 
 
 Route::get('/resale-real-estate-services', [HomeController::class, 'rres'])->name('rres');

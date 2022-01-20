@@ -34,15 +34,15 @@
                 <div class="col">
                     <h6>Status:</h6>
                     <select name="status" id="" class="form-control bg-white">
-                        <option value="">Draft</option>
-                        <option value="">Publish</option>
+                        <option value="Draft">Draft</option>
+                        <option value="Publish">Publish</option>
                     </select>
                 </div>
                 <div class="col">
                     <h6>Featured:</h6>
                     <select name="is_featured" id="" class="form-control bg-white">
-                        <option value="">Not-Featured</option>
-                        <option value="">Featured</option>
+                        <option value="0">Not-Featured</option>
+                        <option value="1">Featured</option>
                     </select>
                 </div>
             </div>
@@ -55,11 +55,37 @@
                     </textarea>
                 </div>
             </div>
-
+            <br>
+            <div >
+                <div class="row">
+                    <div class="col-md-1">
+                        <img src="{{asset('storage/'.$data->image) }}" height="85" width="85"style=" border: 1px solid #555;"id="imageShow">
+                    </div>
+                    <div class="col-md-11">
+                        <label class="input-group-text">Image</label>
+                        <input class="form-select" type="file" name="image" id="image">
+                    </div>
+            </div>
+                    
             <div class="mt-4">
                 <button class="btn btn-primary">Save Changes</button>
             </div>
         </form>
     </div>
 </div>
+@endsection
+@section('script')
+<script type="text/javascript">
+  $('document').ready(function () {
+    $("#image").change(function () {
+        if (this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#imageShow').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+});
+</script>
 @endsection

@@ -6,6 +6,9 @@ use App\Models\Neighborhood;
 use Illuminate\Http\Request;
 use Redirect;
 use Auth;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Facades\Image as Image;
 
 class NeighborhoodController extends Controller
 {
@@ -44,10 +47,18 @@ class NeighborhoodController extends Controller
         $addNeighbor->content = $request->content;
         $addNeighbor->excerpt = $request->excerpt;
         $addNeighbor->status = $request->status;
-        $addNeighbor->is_featured = $request->featured;
+        $addNeighbor->is_featured = $request->is_featured;
         $addNeighbor->created_by = Auth::user()->id;
+        $addNeighbor->created_by = Auth::user()->id;
+         if( $request->file('image') != null){
+            $picture = $request->file('image');
+            $fileName = time() . '.' . $picture->getClientOriginalExtension();
+            $img = Image::make($picture->getRealPath());
+            $img->stream();
+            $url = Storage::disk('public')->put('uploads/neighborhood', $picture);
+            $addNeighbor->image = $url;  
+        }
         $addNeighbor->save();
-
         return redirect()->back()->with("Neighborhood Added Successfully");
     }
 

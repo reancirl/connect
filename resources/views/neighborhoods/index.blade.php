@@ -15,6 +15,7 @@
         <table class="table table-bordered" id="data_table">
             <thead>
                 <tr>
+                    <th width="5%">Image</th>
                     <th width="30%">Title</th>
                     <th>Author</th>
                     <th># of Projects</th>
@@ -24,6 +25,9 @@
             <tbody>
                 @foreach ($data as $d)
                     <tr>
+                        <td>
+                            <img src="{{asset('storage/'.$d->image) }}" alt="image" width="40" height="40">
+                        </td>
                         <td>
                             {{ $d->title }}
                         </td>

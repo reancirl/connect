@@ -27,7 +27,6 @@ class MediaController extends Controller
             'title' => 'required',
             'alt_text' => 'required',
         ]);
-
         $media=new Media();
         $media->title=$request->title;
         $media->alt_text=$request->alt_text;

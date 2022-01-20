@@ -42,6 +42,10 @@
                         <option value="0">No</option>
                     </select>
                 </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text">Image</label>
+                    <input class="form-select" type="file" name="image">
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

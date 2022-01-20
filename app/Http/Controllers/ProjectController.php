@@ -8,6 +8,9 @@ use App\Models\Developer;
 use Illuminate\Http\Request;
 use Auth;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Facades\Image as Image;
 
 class ProjectController extends Controller
 {
@@ -45,8 +48,15 @@ class ProjectController extends Controller
         $project->content = $request->content;
         $project->beds = $request->beds;
         $project->baths = $request->baths;
+        if( $request->file('image') != null){
+            $picture = $request->file('image');
+            $fileName = time() . '.' . $picture->getClientOriginalExtension();
+            $img = Image::make($picture->getRealPath());
+            $img->stream();
+            $url = Storage::disk('public')->put('uploads/project', $picture);
+            $project->image = $url;  
+        }
         $project->save();
-
         return Redirect::to('/project')->with('success', 'Successfully Update Project');
     }
 

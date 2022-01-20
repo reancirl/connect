@@ -46,7 +46,19 @@
                     </select>
                 </div>
             </div>
-
+            <br>
+             <div >
+                <div class="row">
+                    <div class="col-md-1">
+                        <img src="{{asset('storage/'.$data->image) }}" height="85" width="85"style=" border: 1px solid #555;"id="imageShow">
+                    </div>
+                    <div class="col-md-11">
+                        <label class="input-group-text">Image</label>
+                        <input class="form-select" type="file" name="image" id="image">
+                    </div>
+                </div>
+                    
+            </div>
             <div class="row mt-3">
                 <div class="col">
                     <h6>Content:</h6>
@@ -62,4 +74,19 @@
         </form>
     </div>
 </div>
+@endsection
+@section('script')
+<script type="text/javascript">
+  $('document').ready(function () {
+    $("#image").change(function () {
+        if (this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#imageShow').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+});
+</script>
 @endsection

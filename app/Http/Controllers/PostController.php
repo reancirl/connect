@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Auth;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Facades\Image as Image;
 
 class PostController extends Controller
 {
@@ -18,7 +21,6 @@ class PostController extends Controller
         $data = Post::get();
         return view('posts.index',compact('data'));
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -46,6 +48,14 @@ class PostController extends Controller
         $addPost->status = $request->status;
         $addPost->is_featured = $request->is_featured;
         $addPost->created_by = Auth::user()->id;
+         if( $request->file('image') != null){
+            $picture = $request->file('image');
+            $fileName = time() . '.' . $picture->getClientOriginalExtension();
+            $img = Image::make($picture->getRealPath());
+            $img->stream();
+            $url = Storage::disk('public')->put('uploads/post', $picture);
+            $addPost->image = $url;  
+        }
         $addPost->save();
 
         return redirect('/post')->with("Post Added Successfully");

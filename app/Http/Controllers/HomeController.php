@@ -101,4 +101,8 @@ class HomeController extends Controller
     {
         return view('frontend.meet_the_team');
     }
+    public function main_search()
+    {
+        return view('frontend.main_search');
+    }
 }

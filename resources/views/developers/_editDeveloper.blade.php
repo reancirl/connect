@@ -1,9 +1,4 @@
-
-
-
-
-
-<div class="modal fade" id="edit_developer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -16,19 +11,19 @@
             <div class="modal-body">
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">Name</span>
-                        <input type="text" class="form-control" name ="name" value="{{ $developer->name }}" placeholder="Name" aria-label="Username" required aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" name ="name" value="{{ $developer->name }}"  aria-label="Username" required aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">Title</span>
-                        <input type="text" class="form-control" name ="title" value="{{ $developer->title }}" placeholder="Title" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" name ="title" value="{{ $developer->title }}" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">Content</span>
-                        <input type="text" class="form-control" name ="content" value="{{ $developer->content }}" placeholder="Content" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" name ="content" value="{{ $developer->content }}"  aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">Excerpt</span>
-                        <input type="text" class="form-control" name ="excerpt" value="{{ $developer->excerpt }}" placeholder="Excerpt" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" name ="excerpt" value="{{ $developer->excerpt }}"  aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
                         <label class="input-group-text" for="inputGroupSelect01">Status</label>
@@ -44,6 +39,16 @@
                             <option value="0"  @php if( $developer->is_featured == "0") echo 'selected' @endphp>No</option>
                         </select>
                     </div>
+                    <div >
+                    <div class="row">
+                        <div class="col-md-1">
+                            <img src="{{asset('storage/'.$developer->image) }}" height="85" width="85"style=" border: 1px solid #555;"id="imageShow">
+                        </div>
+                        <div class="col-md-11">
+                            <label class="input-group-text">Image</label>
+                            <input class="form-select" type="file" name="image" id="image">
+                        </div>
+                    </div>
                     
             </div>
             <div class="modal-footer">
@@ -54,3 +59,17 @@
       </div>
     </div>
   </div>
+ <script type="text/javascript">
+        $('document').ready(function () {
+            $("#image").change(function () {
+                if (this.files && this.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $('#imageShow').attr('src', e.target.result);
+                    }
+                    reader.readAsDataURL(this.files[0]);
+                }
+            });
+        });
+</script>
+   

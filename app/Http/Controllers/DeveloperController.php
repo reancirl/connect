@@ -6,6 +6,9 @@ use App\Models\Developer;
 use Illuminate\Http\Request;
 use Redirect;
 use Auth;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Facades\Image as Image;
 
 class DeveloperController extends Controller
 {
@@ -47,6 +50,14 @@ class DeveloperController extends Controller
         $addDev->status = $request->status;
         $addDev->is_featured = $request->featured;
         $addDev->created_by = Auth::user()->id;
+        if( $request->file('image') != null){
+            $picture = $request->file('image');
+            $fileName = time() . '.' . $picture->getClientOriginalExtension();
+            $img = Image::make($picture->getRealPath());
+            $img->stream();
+            $url = Storage::disk('public')->put('uploads/developer', $picture);
+            $addDev->image = $url;  
+        }
         $addDev->save();
 
         return redirect()->back()->with("Developer Added Successfully");
