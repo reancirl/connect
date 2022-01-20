@@ -1,4 +1,9 @@
 @extends('layouts.frontend')
+
+@section('title', $seo->title ?? $seo->name)
+@section('description', $seo->description ?? '')
+@section('keywords', $seo->keywords ?? '')
+
 @section('content')
 <div class="container-fluid" align="center">
     <div class="col-md-6">

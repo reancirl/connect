@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Project;
 use App\Models\Post;
 use App\Models\Media;
+use App\Models\Pages;
 
 class HomeController extends Controller
 {
@@ -109,7 +110,8 @@ class HomeController extends Controller
 
     public function all_resources()
     {
-        return view('frontend.all_resources');
+        $seo = Pages::where('name','All Resources')->first();
+        return view('frontend.all_resources',compact('seo'));
     }
     
 }

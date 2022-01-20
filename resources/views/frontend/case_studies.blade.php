@@ -1,5 +1,9 @@
 @extends('layouts.frontend')
 
+@section('title', $seo->title ?? $seo->name)
+@section('description', $seo->description ?? '')
+@section('keywords', $seo->keywords ?? '')
+
 @section('content')
 
 <style>

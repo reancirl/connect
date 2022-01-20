@@ -1,5 +1,9 @@
 @extends('layouts.frontend')
 
+@section('title', $seo->title ?? $seo->name)
+@section('description', $seo->description ?? '')
+@section('keywords', $seo->keywords ?? '')
+
 @section('content')
     <section class="text-center imagebg mb-5 pb-3">
         <div class="container">

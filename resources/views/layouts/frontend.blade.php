@@ -2,7 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Connect</title>
+        <title>@yield('title')</title>
+        <meta name="description" content="@yield('description')">
+        <meta name="description" content="@yield('keywords')">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="{{ asset('stack/css/stack-interface.css') }}" rel="stylesheet" type="text/css" media="all">
         <link href="{{ asset('stack/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />

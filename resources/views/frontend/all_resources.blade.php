@@ -1,5 +1,9 @@
 @extends('layouts.frontend')
 
+@section('title', $seo->title ?? $seo->name)
+@section('description', $seo->description ?? '')
+@section('keywords', $seo->keywords ?? '')
+
 @section('content')
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">

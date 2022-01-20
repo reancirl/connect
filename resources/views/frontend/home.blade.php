@@ -1,5 +1,9 @@
 @extends('layouts.frontend')
 
+@section('title', $seo->title ?? $seo->name)
+@section('description', $seo->description ?? '')
+@section('keywords', $seo->keywords ?? '')
+
 @section('content')
     <section class="imageblock feature-large height-100">
         <div class="container pos-vertical-center" style="margin-left:3rem !important;background-image:url('{{ asset('uploads/headerbannerblank1.jpg') }}'); background-size: cover;">
@@ -92,7 +96,7 @@
                         <option disabled selected value="">Baths</option>
                     </select>
                 </div>
-                <button type="submit" class="btn_connect_button pt-2">Find Listings</button>
+                <a href="https://listings.connect.ca/index.asp?PageAction=NoColumn&Type=ShowSearchNoLocation" class="btn_connect_button" style="text-decoration:none;">Find Listings</a>
             </form>
             <p style="color:#000; font-weight:300; font-size:16px;margin-top:2rem;margin-bottom:0px;padding-bottom:0px;">
                 Or search active listings for sale by:
