@@ -26,7 +26,7 @@
                 @foreach ($data as $d)
                     <tr>
                         <td>
-                            <img src="{{asset('storage/'.$d->image) }}" alt="image" width="40" height="40">
+                            <img src="{{ $d->image ? asset('storage/'.$d->image) : asset('img/noimage.png') }}" alt="image" width="40" height="40">
                         </td>
                         <td>
                             {{ $d->title }}

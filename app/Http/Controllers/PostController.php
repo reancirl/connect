@@ -8,6 +8,7 @@ use Auth;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image as Image;
+use App\Models\Media;
 
 class PostController extends Controller
 {
@@ -48,13 +49,19 @@ class PostController extends Controller
         $addPost->status = $request->status;
         $addPost->is_featured = $request->is_featured;
         $addPost->created_by = Auth::user()->id;
-         if( $request->file('image') != null){
+        if( $request->file('image') != null){
             $picture = $request->file('image');
             $fileName = time() . '.' . $picture->getClientOriginalExtension();
             $img = Image::make($picture->getRealPath());
             $img->stream();
             $url = Storage::disk('public')->put('uploads/post', $picture);
             $addPost->image = $url;  
+
+            $media = new Media;
+            $media->title = $request->title;
+            $media->alt_text = $request->title;
+            $media->path = $url; 
+            $media->save();
         }
         $addPost->save();
 
@@ -99,6 +106,20 @@ class PostController extends Controller
         $post->excerpt = $request->excerpt;
         $post->status = $request->status;
         $post->is_featured = $request->is_featured;
+        if( $request->file('image') != null){
+            $picture = $request->file('image');
+            $fileName = time() . '.' . $picture->getClientOriginalExtension();
+            $img = Image::make($picture->getRealPath());
+            $img->stream();
+            $url = Storage::disk('public')->put('uploads/post', $picture);
+            $post->image = $url;  
+
+            $media = new Media;
+            $media->title = $request->title;
+            $media->alt_text = $request->title;
+            $media->path = $url; 
+            $media->save();
+        }
         $post->update();
 
         return redirect('/post')->with('success', 'Post Updated Successfully ');

@@ -76,7 +76,7 @@
                     </div>
                 </div>
             </div>
-            <form action="">
+            <form action="https://listings.connect.ca/index.asp" method="get">
                 <div class="homepage_search_section mb-4">
                     <input name="keyword" type="text" class="rounded-0 search_input search_fields thin_border_right" style="width:100%;" placeholder="Enter a city, town neighbourhood or address">
 
@@ -96,7 +96,7 @@
                         <option disabled selected value="">Baths</option>
                     </select>
                 </div>
-                <a href="https://listings.connect.ca/index.asp?PageAction=NoColumn&Type=ShowSearchNoLocation" class="btn_connect_button" style="text-decoration:none;">Find Listings</a>
+                <button class="btn_connect_button pt-2" style="text-decoration:none;" type="submit">Find Listings</button>
             </form>
             <p style="color:#000; font-weight:300; font-size:16px;margin-top:2rem;margin-bottom:0px;padding-bottom:0px;">
                 Or search active listings for sale by:
