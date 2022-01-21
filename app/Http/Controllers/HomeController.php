@@ -132,4 +132,12 @@ class HomeController extends Controller
         $seo = Pages::where('name','All Resources')->first();
         return view('frontend.all_resources',compact('seo'));
     }
+
+    public function featured_development()
+    {
+        $seo = Pages::where('name', 'Featured Development')->first();
+        return view('frontend.featured_development',compact('seo'));
+    }
+
+   
 }
