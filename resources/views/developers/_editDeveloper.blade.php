@@ -1,11 +1,11 @@
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="edit_developer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Update Developer</h5>
+          <h5 class="modal-title">Update Developer</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form action ="{{ route('developer.update', $developer->id)}}" method='POST' enctype="multipart/form-data" >
+        <form action ="{{ route('developer.update', $developer->id)}}" method='POST' enctype="multipart/form-data">
             @csrf
             @method('PATCH')
             <div class="modal-body">
@@ -41,10 +41,10 @@
                     </div>
                     <div >
                     <div class="row">
-                        <div class="col-md-1">
-                            <img src="{{asset('storage/'.$developer->image) }}" height="85" width="85"style=" border: 1px solid #555;"id="imageShow">
+                        <div class="col-md-2">
+                            <img src="{{ $developer->image ? asset('storage/'.$developer->image) : asset('img/noimage.png') }}" height="85" width="85"style=" border: 1px solid #555;"id="imageShow">
                         </div>
-                        <div class="col-md-11">
+                        <div class="col-md-10">
                             <label class="input-group-text">Image</label>
                             <input class="form-select" type="file" name="image" id="image">
                         </div>

@@ -9,7 +9,7 @@
             <a class="btn btn-primary btn-sm" href="{{ url()->previous() }}">Back</a>
         </h3>
         <hr>
-        <form action="{{ route('post.update',$data->id) }}" method="POST">
+        <form action="{{ route('post.update',$data->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PATCH')
             
@@ -50,7 +50,7 @@
              <div >
                 <div class="row">
                     <div class="col-md-1">
-                        <img src="{{asset('storage/'.$data->image) }}" height="85" width="85"style=" border: 1px solid #555;"id="imageShow">
+                        <img src="{{ $data->image ? asset('storage/'.$data->image) : asset('img/noimage.png') }}" height="85" width="85"style=" border: 1px solid #555;"id="imageShow">
                     </div>
                     <div class="col-md-11">
                         <label class="input-group-text">Image</label>

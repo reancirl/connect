@@ -25,13 +25,7 @@
                 @foreach ($data as $d)
                     <tr>
                         <td>
-                           
-                            @if($d->image == null)
-                                <img src="{{asset('img/noimage.png') }}" alt="noimage" width="40" height="40">
-                            @else
-                                <img src="{{asset('storage/'.$d->image) }}" alt="image" width="40" height="40">
-                            @endif
-                            
+                            <img src="{{ $d->image ? asset('storage/'.$d->image) : asset('img/noimage.png') }}" alt="image" width="40" height="40">
                         </td>
                         <td>
                             {{ $d->name }}

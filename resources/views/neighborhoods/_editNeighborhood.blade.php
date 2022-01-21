@@ -9,7 +9,7 @@
             <a class="btn btn-primary btn-sm" href="{{ url()->previous() }}">Back</a>
         </h3>
         <hr>
-        <form action="{{ route('neighborhood.update',$data->id) }}" method="POST">
+        <form action="{{ route('neighborhood.update',$data->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PATCH')
             <div class="row">
