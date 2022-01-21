@@ -13,17 +13,7 @@ use App\Http\Controllers\MenuController;
 
 Auth::routes(['register' => false]);
 
-Route::get('/', [HomeController::class, 'front_page']);
-Route::get('/our-story', [HomeController::class, 'ourstory']);
-Route::get('/thank-you', [HomeController::class, 'thankyou'])->name('thankyou');
-Route::get('/join-our-inner-circle', [HomeController::class, 'join_our_inner_circle'])->name('join_our_inner_circle');
-Route::get('/individual-listing', [HomeController::class, 'individual_listing'])->name('individual_listing');
-Route::get('/case-studies', [HomeController::class, 'case_studies'])->name('case_studies');
-Route::get('/real-estate-investment-services', [HomeController::class, 'reis'])->name('real_estate_investment_services');
-Route::get('/neighbourhood-search',[HomeController::class,'neighbourhood_search'])->name('neighbourhood_search');
-Route::get('/our-agents',[HomeController::class,'our_agents'])->name('our_agents');
-Route::get('/meet-the-team',[HomeController::class,'meet_the_team'])->name('meet_the_team');
-Route::get('/main-search',[HomeController::class,'main_search'])->name('main_search');
+$data = \App\Models\Pages::get();
 
 foreach($data as $d) {
     Route::get($d->link, [HomeController::class, $d->function_name])->name($d->function_name);
