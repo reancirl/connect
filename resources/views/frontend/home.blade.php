@@ -233,8 +233,8 @@
     <section class="row mt-0 pt-0 mb-0 pb-0">
         <div class="col pt-5 featured_section">
             @foreach ($featured_blog as $item)
-                <a href="{{ $item->media ? asset('storage/'.$item->media->path) : '' }}" class="featured_listing_a">
-                    <img class="mb-0 pb-3" src="{{ $item->media ? asset('storage/'.$item->media->path) : '' }}" alt="{{ $item->media ? $item->media->alt_text : '' }}" width="100%">
+                <a href="{{ $item->image ? asset('storage/'.$item->image) : asset('img/noimage.png') }}" class="featured_listing_a">
+                    <img class="mb-0 pb-3" src="{{ $item->image ? asset('storage/'.$item->image) : asset('img/noimage.png') }}" alt="{{ $item->title ? $item->title : '' }}" width="100%">
                     <br>
                     <span class="featured_listings_address">{{ $item->title }}</span>
                     <br>
